@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/StateSystemStartup.cpp</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/e54manageadc.c</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/StateAutomaticTestMode.cpp</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/temperatureCircuit.c</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/hpl/port/hpl_gpio_base.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/temperatureCircuit.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/SystemManager.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/WtchDog.c</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/version.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/hal/include/hal_adc_os.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/CommonScreenMessages.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/TankManager.h</file>
+            <file>file:/C:/svnrepo/software/trunk/2019%20B%20Series%20Control%20Redesign.X/StateMenuBrowse.cpp</file>
+        </group>
+    </open-files>
+</project-private>

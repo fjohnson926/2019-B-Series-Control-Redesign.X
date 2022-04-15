@@ -1,0 +1,9 @@
+#
+#Thu Apr 22 13:10:35 EDT 2021
+Default.languagetoolchain.version=2.15
+Default.languagetoolchain.dir=C\:\\Program Files (x86)\\Microchip\\xc32\\v2.15\\bin
+Default.com-microchip-mplab-nbide-toolchainXC32-XC32LanguageToolchain.md5=f86c6f65de49a1ea6ceda521d64aed4e
+configurations-xml=ba241a47b26d1b5068fe1924c5d9e64d
+com-microchip-mplab-nbide-embedded-makeproject-MakeProject.md5=fe6bc8387062251d924fb28d44703093
+host.platform=windows
+conf.ids=Default
