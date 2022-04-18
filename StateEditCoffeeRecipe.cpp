@@ -42,7 +42,8 @@ int buttonHoldCount = 0;
 signed int lastTouchButton;
 int eventCounter = 0;
 
-uint8_t recipeSelectIndex = 0;
+static int currentRecipeMenuItems = 2;
+int8_t recipeSelectIndex = 0;   //Changed to signed integer
 bool recipeSelectorInitialized = false;
 char recipeSelectorBottomLine[20];
 ScreenMessages RecipeSelectorMsg("RECIPE SELECTED", recipeSelectorBottomLine, DEFAULT_STATIC_MENU_PRINT_TIME);
@@ -53,9 +54,13 @@ void updateRecipeSelectMsg() //FJ added
     {
         sprintf(recipeSelectorBottomLine,"%s","ONE");
     }
-    else
+    else if(recipeSelectIndex == RECIPE_TWO_INDEX)
     {
         sprintf(recipeSelectorBottomLine,"%s","TWO");
+    }
+    else if(recipeSelectIndex == RECIPE_THREE_INDEX)
+    {
+        sprintf(recipeSelectorBottomLine,"%s","THREE");
     }
 }
 void SystemManager::recipeSelectHandler() //FJ added to SytemManager.h System class under void headSelectHandler();
@@ -67,9 +72,24 @@ void SystemManager::recipeSelectHandler() //FJ added to SytemManager.h System cl
         recipeSelectorInitialized = true;
     }
     
-    if(releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS)
+    if(releasedTouchValue == TOUCH_NEXT)    //FJ changed
     {
-        recipeSelectIndex = !recipeSelectIndex;
+        recipeSelectIndex++;
+        if (recipeSelectIndex > currentRecipeMenuItems)
+        {
+            recipeSelectIndex = RECIPE_ONE_INDEX;
+        }
+        updateRecipeSelectMsg();
+        myUI->Screen->showMessageNow(&RecipeSelectorMsg);
+    }
+    
+    else if(releasedTouchValue == TOUCH_PREVIOUS)   //FJ changed
+    {
+        recipeSelectIndex--;
+        if(recipeSelectIndex < 0)
+        {
+            recipeSelectIndex = RECIPE_THREE_INDEX;
+        }
         updateRecipeSelectMsg();
         myUI->Screen->showMessageNow(&RecipeSelectorMsg);
     }
