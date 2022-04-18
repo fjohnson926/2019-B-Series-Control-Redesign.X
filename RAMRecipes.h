@@ -25,8 +25,11 @@
 
 #define TOTAL_COFFEE_RECIPES 6
 
-#define RIGHT_SIDE_RECIPE_INDEX 0
-#define LEFT_SIDE_RECIPE_INDEX 1
+#define RECIPE_ONE_INDEX 0  //FJ add for new recipes
+#define RECIPE_TWO_INDEX 1  //FJ add for new recipes
+
+#define RIGHT_SIDE_RECIPE_INDEX 0 
+#define LEFT_SIDE_RECIPE_INDEX 1  
 
 
 /* Provide C++ Compatibility */

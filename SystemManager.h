@@ -43,8 +43,9 @@
 #define HOLD_TIME_BEFORE_ENTER_MENU_MS 5000
 #define POWER_LED_FLASH_RATE_MS 1000
 
-#define RIGHT_SINGLE_HEAD_INDEX 0
-#define LEFT_HEAD_INDEX 1
+
+#define RIGHT_SINGLE_HEAD_INDEX 0 
+#define LEFT_HEAD_INDEX 1          
 
 typedef enum SUPPORT_MODELS
 {
@@ -192,7 +193,7 @@ public:
     void handleTeachMode(void);
     void teachModeSaveState(void);
     
-    
+    void recipeSelectHandler(); //FJ added
     void headSelectHandler();
     void pulseSelectHandler(void);
     void stateEditCoffeeRecipeMain(void);

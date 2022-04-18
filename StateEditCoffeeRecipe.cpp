@@ -24,6 +24,7 @@
 typedef enum COFFEE_BEVERAGE_EDITOR
 {
     COFFEE_BEVERERAGE_EDITOR_INIT,
+    COFFEE_BEVERAGE_SELECT_RECIPE,  //FJ added        
     COFFEE_BEVERAGE_SELECT_HEAD,
     COFFEE_BEVERAGE_SELECT_EDIT_ENTIRE_RECIPE_OR_SPECIFIC_PULSE,
     COFFEE_BEVERAGE_SELECT_PULSE,
@@ -40,6 +41,55 @@ bool recipeSelectorStateInitialized = false;
 int buttonHoldCount = 0;
 signed int lastTouchButton;
 int eventCounter = 0;
+
+uint8_t recipeSelectIndex = 0;
+bool recipeSelectorInitialized = false;
+char recipeSelectorBottomLine[20];
+ScreenMessages RecipeSelectorMsg("RECIPE SELECTED", recipeSelectorBottomLine, DEFAULT_STATIC_MENU_PRINT_TIME);
+
+void updateRecipeSelectMsg() //FJ added
+{
+    if(recipeSelectIndex == RECIPE_ONE_INDEX)
+    {
+        sprintf(recipeSelectorBottomLine,"%s","ONE");
+    }
+    else
+    {
+        sprintf(recipeSelectorBottomLine,"%s","TWO");
+    }
+}
+void SystemManager::recipeSelectHandler() //FJ added to SytemManager.h System class under void headSelectHandler();
+{
+    if(!recipeSelectorInitialized)
+    {   
+        updateRecipeSelectMsg();
+        myUI->Screen->showMessageNow(&RecipeSelectorMsg);
+        recipeSelectorInitialized = true;
+    }
+    
+    if(releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS)
+    {
+        recipeSelectIndex = !recipeSelectIndex;
+        updateRecipeSelectMsg();
+        myUI->Screen->showMessageNow(&RecipeSelectorMsg);
+    }
+    
+    else if(releasedTouchValue == TOUCH_ACCEPT)
+    {   
+        editedRecipe = *getCoffeeBeveragePointer(recipeSelectIndex);
+        currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_EDIT_ENTIRE_RECIPE_OR_SPECIFIC_PULSE;
+        recipeSelectorInitialized = false;
+        return;
+    }
+    else if(releasedTouchValue == TOUCH_CANCEL)
+    {        
+        recipeSelectorInitialized = false;
+        currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;
+        changeState(MENU_BROWSE);
+        return;
+    }
+}
+// End of Recipe Selector
 
 uint8_t headSelectIndex = 0;
 bool headSelectorInitialized = false;
@@ -141,8 +191,8 @@ void SystemManager::editEntireRecipeHandler(void)
         editEntireRecipeHandlerInitialized = false;
         if(machineFeature->numberOfHeads == 1)
         {
-            currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;
-            changeState(MENU_BROWSE);
+            currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_RECIPE; //FJ changed from [COFFEE_BEVERERAGE_EDITOR_INIT;]
+             //FJ Deleted [changeState(MENU_BROWSE);]
         }
         else
         {
@@ -151,6 +201,7 @@ void SystemManager::editEntireRecipeHandler(void)
         return;
     }
 }
+//End of Entire Recipe Handler
 
 bool pulseSelectInitialized = false;
 char pulseSelectBottomLine[20];
@@ -290,7 +341,14 @@ void SystemManager::pulseSelectHandler(void)
     {
         checkAndFixPulseOffTimes();
         CoffeeBeverage* ramRecipes = (CoffeeBeverage*)getCoffeeBeverageTableAddress();
-        ramRecipes[headSelectIndex] = editedRecipe;
+        if(machineFeature->numberOfHeads == 1) //FJ added if statement was just [ramRecipes[headSelectIndex] = editedRecipe;]
+        {
+            ramRecipes[recipeSelectIndex] = editedRecipe;
+        }
+        else
+        {
+            ramRecipes[headSelectIndex] = editedRecipe;
+        }
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);        
         currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;
         pulseSelectInitialized = false;
@@ -419,7 +477,14 @@ void SystemManager::editSelectedPulseOnHandler(void)
         //Recipe cleanup. off time in previous pulse doesn't matter. All additional pulses will be set to zero
         recipeCleanup();               
         CoffeeBeverage* ramRecipes = (CoffeeBeverage*)getCoffeeBeverageTableAddress();
-        ramRecipes[headSelectIndex] = editedRecipe;
+        if(machineFeature->numberOfHeads == 1)
+        {
+           ramRecipes[recipeSelectIndex] = editedRecipe; 
+        }
+        else
+        {
+            ramRecipes[headSelectIndex] = editedRecipe;
+        }
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         
         //Case where pulse on time set to zero
@@ -549,7 +614,14 @@ void SystemManager::editSelectedPulseOffHandler(void)
     else if(releasedTouchValue == TOUCH_ACCEPT)
     {           
         CoffeeBeverage* ramRecipes = (CoffeeBeverage*)getCoffeeBeverageTableAddress();
-        ramRecipes[headSelectIndex] = editedRecipe;
+        if(machineFeature->numberOfHeads == 1)
+        {
+           ramRecipes[recipeSelectIndex] = editedRecipe; 
+        }
+        else
+        {
+           ramRecipes[headSelectIndex] = editedRecipe; 
+        }
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         if(editEntireRecipeAnswer)
         {
@@ -588,8 +660,8 @@ void SystemManager::stateEditCoffeeRecipeInitialize(void)
     editedRecipe = *getCoffeeBeveragePointer(0);         
     if(machineFeature->numberOfHeads == 1)
     {
-        headSelectIndex = 0;
-        currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_EDIT_ENTIRE_RECIPE_OR_SPECIFIC_PULSE;                       
+        recipeSelectorInitialized = false;    //FJ Changed from [headSelectIndex = 0;
+        currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_RECIPE; //FJ Changed from [COFFEE_BEVERAGE_SELECT_EDIT_ENTIRE_RECIPE_OR_SPECIFIC_PULSE;                       
     }
     else
     {
@@ -605,6 +677,9 @@ void SystemManager::stateEditCoffeeRecipeMain(void)
         case COFFEE_BEVERERAGE_EDITOR_INIT:
             stateEditCoffeeRecipeInitialize();
             break;
+        case COFFEE_BEVERAGE_SELECT_RECIPE: //FJ added
+            recipeSelectHandler();
+            break;    
         case COFFEE_BEVERAGE_SELECT_HEAD:
             headSelectHandler();
             break;
