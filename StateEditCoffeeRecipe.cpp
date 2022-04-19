@@ -43,7 +43,7 @@ signed int lastTouchButton;
 int eventCounter = 0;
 
 static int currentRecipeMenuItems = 2;
-int8_t recipeSelectIndex = 0;   //Changed to signed integer
+int8_t recipeSelectIndex = 0;   //FJ Changed to signed integer
 bool recipeSelectorInitialized = false;
 char recipeSelectorBottomLine[20];
 ScreenMessages RecipeSelectorMsg("RECIPE SELECTED", recipeSelectorBottomLine, DEFAULT_STATIC_MENU_PRINT_TIME);

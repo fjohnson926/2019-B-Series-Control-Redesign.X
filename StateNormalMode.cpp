@@ -10,7 +10,7 @@ ScreenMessages DispenseCompleteMsg("DISPENSE", "COMPLETE!");
 ScreenMessages WaterReadyMsg("WATER TEMP", "OK");
 ScreenMessages HalfBrewSelectedMsg("HALF BREW", "SELECTED");
 ScreenMessages NormalBrewSelectedMsg("NORMAL BREW", "SELECTED");
-extern uint8_t recipeSelectIndex; //FJ added
+extern int8_t recipeSelectIndex; //FJ added
 
 char WarmerLowerBuffer[6][16];
 char WarmerUpperBuffer[6][16];
@@ -273,7 +273,7 @@ void SystemManager::stateNormalMode()
     }
     else
     {
-        manageDispenseManagersInNormalMode(myRightSingleHead, myUI->LEDs->leftSingleBrewLeds, TOUCH_LEFT_SINGLE_BREW, &SingleHeadDispensingMsg, &SingleHeadCancelMsg, recipeSelectIndex);
+        manageDispenseManagersInNormalMode(myLeftHead, myUI->LEDs->leftSingleBrewLeds, TOUCH_LEFT_SINGLE_BREW, &SingleHeadDispensingMsg, &SingleHeadCancelMsg, recipeSelectIndex); //FJ changed from myRightSingleHead to myLeftHead
     }
     
     manageFeaturedWarmersInNormalMode();

@@ -27,7 +27,10 @@
 
 #define RECIPE_ONE_INDEX 0  //FJ add for new recipes
 #define RECIPE_TWO_INDEX 1  //FJ add for new recipes
-#define RECIPE_THREE_INDEX 2 //FJ added 
+#define RECIPE_THREE_INDEX 2 //FJ added
+#define RECIPE_FOUR_INDEX 3 //FJ added 
+#define RECIPE_FIVE_INDEX 4 //FJ added 
+#define RECIPE_SIX_INDEX 5 //FJ added 
 
 #define RIGHT_SIDE_RECIPE_INDEX 0 
 #define LEFT_SIDE_RECIPE_INDEX 1  

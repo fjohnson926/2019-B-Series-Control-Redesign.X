@@ -2,10 +2,12 @@
 #include "RAMRecipes.h"
 #include "ScreenMessages.h"
 
+
 //This state allows a user to easily program a simple recipe. The recipe is a one pulse recipe
 
 const int TEXT_BUFFER_SIZE = 16;
 const int LOW_TEMP_NO_TEACH_DIFF_F = 3;
+extern int8_t recipeSelectIndex;
 
 typedef enum TEACH_MODE_STATES
 {
@@ -176,7 +178,7 @@ void SystemManager::handleTeachMode(void)
         
         if(machineFeature->numberOfHeads == 1)
         {
-            selectedDispenseHead = myRightSingleHead;
+            selectedDispenseHead = myLeftHead;   //FJ changed from myRightSingleHead to myLeftHead
             myUI->LEDs->leftSingleBrewLeds->setColorGreen();
         }
         else if(teachModeHeadSelectIndex == LEFT_SIDE_RECIPE_INDEX)
@@ -297,7 +299,7 @@ void SystemManager::teachModeSaveState(void)
                 taughtRecipe.size[0].pulseOnTimeSeconds[i] = 0;
             }
             taughtRecipe.size[0].pulseOnTimeSeconds[0] = float(valveOpenTimeMs)/float(1000);
-            ramRecipes[teachModeHeadSelectIndex] = taughtRecipe;
+            ramRecipes[recipeSelectIndex] = taughtRecipe;   //FJ changed from teachModeHeadSelectIndex to recipeSelectIndex
             NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         }
         else
