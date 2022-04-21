@@ -135,9 +135,15 @@ void SystemManager::teachModeHeadSelectHandler()
         return;
         }
 
-    if (releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS)
+    if (releasedTouchValue == TOUCH_NEXT && teachModeHeadSelectIndex == LEFT_SIDE_RECIPE_INDEX) //FJ changed separated TOUCHES
         {
-        teachModeHeadSelectIndex = !teachModeHeadSelectIndex;
+        teachModeHeadSelectIndex = teachModeHeadSelectIndex + 3;
+        teachModeUpdateHeadSelectMsg(teachModeHeadSelectBuffer, teachModeHeadSelectIndex);
+        myUI->Screen->showMessageNow(&teachModeHeadSelectMsg);
+        }
+    else if (releasedTouchValue == TOUCH_PREVIOUS && teachModeHeadSelectIndex == RIGHT_SIDE_RECIPE_INDEX)
+        {
+        teachModeHeadSelectIndex = teachModeHeadSelectIndex - 3;
         teachModeUpdateHeadSelectMsg(teachModeHeadSelectBuffer, teachModeHeadSelectIndex);
         myUI->Screen->showMessageNow(&teachModeHeadSelectMsg);
         }
@@ -302,7 +308,7 @@ void SystemManager::teachModeSaveState(void)
                 taughtRecipe.size[0].pulseOnTimeSeconds[i] = 0;
                 }
             taughtRecipe.size[0].pulseOnTimeSeconds[0] = float(valveOpenTimeMs) / float(1000);
-            if (headSelectIndex == LEFT_SIDE_RECIPE_INDEX)  //FJ added if statement 4/20
+            if (teachModeHeadSelectIndex == LEFT_SIDE_RECIPE_INDEX) //FJ added if statement 4/20
                 {
                 ramRecipes[recipeSelectIndex] = taughtRecipe; //FJ changed from teachModeHeadSelectIndex to recipeSelectIndex
                 }

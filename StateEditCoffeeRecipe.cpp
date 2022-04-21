@@ -114,7 +114,7 @@ void SystemManager::recipeSelectHandler() //FJ added to SytemManager.h System cl
             recipeRightSelectIndex++;
             if (recipeRightSelectIndex > currentDoubleHeadRecipeMenuItems)
                 {
-                recipeRightSelectIndex = RECIPE_THREE_INDEX;
+                recipeRightSelectIndex = RECIPE_FOUR_INDEX;
                 }
             updateRecipeSelectMsg();
             myUI->Screen->showMessageNow(&RecipeSelectorMsg);
@@ -212,7 +212,14 @@ void SystemManager::headSelectHandler()
 
     else if (releasedTouchValue == TOUCH_ACCEPT)
         {
-        editedRecipe = *getCoffeeBeveragePointer(headSelectIndex);
+        if (headSelectIndex == LEFT_SIDE_RECIPE_INDEX)
+            {
+            editedRecipe = *getCoffeeBeveragePointer(recipeSelectIndex);
+            }
+        else
+            {
+            editedRecipe = *getCoffeeBeveragePointer(recipeRightSelectIndex);
+            }
         currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_RECIPE; //FJ changed from COFFEE_BEVERERAGE_EDITOR_INIT to COFFEE_BEVERAGE_SELECT_RECIPE
         headSelectorInitialized = false;
         return;
@@ -430,11 +437,16 @@ void SystemManager::pulseSelectHandler(void)
         {
         checkAndFixPulseOffTimes();
         CoffeeBeverage* ramRecipes = (CoffeeBeverage*) getCoffeeBeverageTableAddress();
-
-        //FJ added if statement was just [ramRecipes[headSelectIndex] = editedRecipe;]
-        // FJ deleted if statement 4/20
-
-        ramRecipes[recipeSelectIndex] = editedRecipe;
+        if (machineFeature->numberOfHeads == 1 || headSelectIndex == 0) //FJ Changed 4/21
+            {
+            ramRecipes[recipeSelectIndex] = editedRecipe;
+            }
+        else
+            {
+            ramRecipes[recipeRightSelectIndex] = editedRecipe; 
+            }
+        
+        //ramRecipes[recipeSelectIndex] = editedRecipe;
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;
         pulseSelectInitialized = false;
@@ -563,13 +575,13 @@ void SystemManager::editSelectedPulseOnHandler(void)
         //Recipe cleanup. off time in previous pulse doesn't matter. All additional pulses will be set to zero
         recipeCleanup();
         CoffeeBeverage* ramRecipes = (CoffeeBeverage*) getCoffeeBeverageTableAddress();
-        if (machineFeature->numberOfHeads == 1)
+        if (machineFeature->numberOfHeads == 1 || headSelectIndex == 0)
             {
             ramRecipes[recipeSelectIndex] = editedRecipe;
             }
         else
             {
-            ramRecipes[headSelectIndex] = editedRecipe;
+            ramRecipes[recipeRightSelectIndex] = editedRecipe; //FJ Changed 4/21
             }
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
 
@@ -700,7 +712,7 @@ void SystemManager::editSelectedPulseOffHandler(void)
     else if (releasedTouchValue == TOUCH_ACCEPT)
         {
         CoffeeBeverage* ramRecipes = (CoffeeBeverage*) getCoffeeBeverageTableAddress();
-        if (machineFeature->numberOfHeads == 1)
+        if (machineFeature->numberOfHeads == 1 || headSelectIndex == 0) //FJ Changed 4/21
             {
             ramRecipes[recipeSelectIndex] = editedRecipe;
             }
