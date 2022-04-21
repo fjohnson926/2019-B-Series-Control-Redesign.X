@@ -23,7 +23,7 @@
 #include "CoffeeBeverageDefaults.h"
 #include "MachineConfiguration.h"
 
-#define TOTAL_COFFEE_RECIPES 6
+#define TOTAL_COFFEE_RECIPES 36 //FJ changed to 24 from 6
 
 #define RECIPE_ONE_INDEX 0  //FJ add for new recipes
 #define RECIPE_TWO_INDEX 1  //FJ add for new recipes
@@ -32,8 +32,8 @@
 #define RECIPE_FIVE_INDEX 4 //FJ added 
 #define RECIPE_SIX_INDEX 5 //FJ added 
 
-#define RIGHT_SIDE_RECIPE_INDEX 0 
-#define LEFT_SIDE_RECIPE_INDEX 1  
+#define RIGHT_SIDE_RECIPE_INDEX 3 
+#define LEFT_SIDE_RECIPE_INDEX 0  
 
 
 /* Provide C++ Compatibility */

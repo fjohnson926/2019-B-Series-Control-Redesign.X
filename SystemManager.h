@@ -45,7 +45,7 @@
 
 
 #define RIGHT_SINGLE_HEAD_INDEX 0 
-#define LEFT_HEAD_INDEX 1          
+//#define LEFT_HEAD_INDEX 1          
 
 typedef enum SUPPORT_MODELS
 {
