@@ -85,14 +85,14 @@ void SystemManager::stateTouchTest()
             powerCount++;
             snprintf(powerCountStr,bufferSize,"%d",powerCount);            
             break;
-        case TOUCH_RIGHT_BREW:
-            rightBrewCount++;
-            snprintf(rightBrewCountStr,bufferSize,"%d",rightBrewCount);  
-            break;
-        case TOUCH_LEFT_SINGLE_BREW:
-            leftBrewCount++;
-            snprintf(leftBrewCountStr,bufferSize,"%d",leftBrewCount);  
-            break;
+//        case TOUCH_RIGHT_BREW:
+//            //rightBrewCount++;
+//            snprintf(rightBrewCountStr,bufferSize,"%d",rightBrewCount);  
+//            break;
+//        case TOUCH_LEFT_SINGLE_BREW:
+//            //leftBrewCount++;
+//            snprintf(leftBrewCountStr,bufferSize,"%d",leftBrewCount);  
+//            break;
         case TOUCH_WARM_1:
             warmer1Count++;
             snprintf(warmer0CountStr,bufferSize,"%d",warmer1Count);  

@@ -187,7 +187,7 @@ void SystemManager::handleTeachMode(void)
 
         if (machineFeature->numberOfHeads == 1)
             {
-            selectedDispenseHead = myLeftHead; //FJ changed from myRightSingleHead to myLeftHead
+            selectedDispenseHead = myRightSingleHead; //FJ changed from myRightSingleHead to myLeftHead
             myUI->LEDs->leftSingleBrewLeds->setColorGreen();
             }
         else if (teachModeHeadSelectIndex == LEFT_SIDE_RECIPE_INDEX)

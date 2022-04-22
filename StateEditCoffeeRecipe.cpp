@@ -443,9 +443,9 @@ void SystemManager::pulseSelectHandler(void)
             }
         else
             {
-            ramRecipes[recipeRightSelectIndex] = editedRecipe; 
+            ramRecipes[recipeRightSelectIndex] = editedRecipe;
             }
-        
+
         //ramRecipes[recipeSelectIndex] = editedRecipe;
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;

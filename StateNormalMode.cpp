@@ -13,6 +13,7 @@ ScreenMessages NormalBrewSelectedMsg("NORMAL BREW", "SELECTED");
 extern int8_t recipeSelectIndex; //FJ added
 extern int8_t recipeRightSelectIndex; //FJ added 4/20
 
+
 char WarmerLowerBuffer[6][16];
 char WarmerUpperBuffer[6][16];
 
@@ -80,15 +81,13 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
         Leds_p->setColorGreen();
         }
 
-    if (dispense_p->getDispenseCompleteStatus())
+    if (releasedTouchValue == TOUCH_RIGHT_BREW) //FJ changed issue#2
         {
-        myUI->Screen->showMessageNow(&DispenseCompleteMsg);
-
         NVBlobs->loadNvBlob(PARMS_READ_INDEX);
         NvParm parm;
-        parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex);
+        parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex); //(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex)
         parm.u.integer_parm++;
-        NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm);
+        NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm); //(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm)
 
         parm = NvParmManager::getNvParm(PARM_INDEX_NONRESETABLEBREWCNT_RIGHTSINGLE + recipeIndex);
         parm.u.integer_parm++;
@@ -96,6 +95,25 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
 
         NVBlobs->flushNvBlob(PARMS_READ_INDEX);
         }
+    if (releasedTouchValue == TOUCH_LEFT_SINGLE_BREW)
+        {
+        NVBlobs->loadNvBlob(PARMS_READ_INDEX);
+        NvParm parm;
+        parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex);
+        parm.u.integer_parm++;
+        NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex, parm);
+
+        parm = NvParmManager::getNvParm(PARM_INDEX_NONRESETABLEBREWCNT_LEFT + recipeIndex);
+        parm.u.integer_parm++;
+        NvParmManager::setNvParm(PARM_INDEX_NONRESETABLEBREWCNT_LEFT + recipeIndex, parm);
+
+        NVBlobs->flushNvBlob(PARMS_READ_INDEX);
+        }
+    if (dispense_p->getDispenseCompleteStatus())
+        {
+        myUI->Screen->showMessageNow(&DispenseCompleteMsg);
+        }
+
     }
 
 void SystemManager::manageWarmersInNormalMode(Warmer * warmer_p, Led * warmerLED_p, signed int warmerTouchTag, const ScreenMessages * activeMsg_p, const ScreenMessages * inActiveMsg_p)
@@ -274,7 +292,7 @@ void SystemManager::stateNormalMode()
         }
     else
         {
-        manageDispenseManagersInNormalMode(myLeftHead, myUI->LEDs->leftSingleBrewLeds, TOUCH_LEFT_SINGLE_BREW, &SingleHeadDispensingMsg, &SingleHeadCancelMsg, recipeSelectIndex); //FJ changed from myRightSingleHead to myLeftHead
+        manageDispenseManagersInNormalMode(myRightSingleHead, myUI->LEDs->leftSingleBrewLeds, TOUCH_LEFT_SINGLE_BREW, &SingleHeadDispensingMsg, &SingleHeadCancelMsg, recipeSelectIndex); //FJ changed from myRightSingleHead to myLeftHead
         }
 
     manageFeaturedWarmersInNormalMode();
