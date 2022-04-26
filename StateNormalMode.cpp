@@ -12,6 +12,7 @@ ScreenMessages HalfBrewSelectedMsg("HALF BREW", "SELECTED");
 ScreenMessages NormalBrewSelectedMsg("NORMAL BREW", "SELECTED");
 extern int8_t recipeSelectIndex; //FJ added
 extern int8_t recipeRightSelectIndex; //FJ added 4/20
+uint8_t newRecipeIndex = 0;
 
 
 char WarmerLowerBuffer[6][16];
@@ -43,7 +44,15 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
         }
     if (releasedTouchValue == dispTouchTag && !dispense_p->isDispensing && !majorErrorsDetected() && isWaterTemperatureReady() && !myTank->initialFill())
         {
-        CoffeeBeverage coffeeRecipe = *getCoffeeBeveragePointer(recipeIndex);
+        if(releasedTouchValue == TOUCH_LEFT_SINGLE_BREW) //FJ added 4/25
+            {
+            newRecipeIndex = recipeSelectIndex;
+            }
+        else if(releasedTouchValue == TOUCH_RIGHT_BREW)
+            {
+            newRecipeIndex = recipeRightSelectIndex;
+            }
+        CoffeeBeverage coffeeRecipe = *getCoffeeBeveragePointer(newRecipeIndex);
         if (halfBrew)
             {
             scaleRecipe(&coffeeRecipe, 0.5);
@@ -80,9 +89,11 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
         {
         Leds_p->setColorGreen();
         }
-
-    if (releasedTouchValue == TOUCH_RIGHT_BREW) //FJ changed issue#2
+        
+    if (dispense_p->getDispenseCompleteStatus())
         {
+        myUI->Screen->showMessageNow(&DispenseCompleteMsg);
+        
         NVBlobs->loadNvBlob(PARMS_READ_INDEX);
         NvParm parm;
         parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex); //(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex)
@@ -94,24 +105,6 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
         NvParmManager::setNvParm(PARM_INDEX_NONRESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm);
 
         NVBlobs->flushNvBlob(PARMS_READ_INDEX);
-        }
-    if (releasedTouchValue == TOUCH_LEFT_SINGLE_BREW)
-        {
-        NVBlobs->loadNvBlob(PARMS_READ_INDEX);
-        NvParm parm;
-        parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex);
-        parm.u.integer_parm++;
-        NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex, parm);
-
-        parm = NvParmManager::getNvParm(PARM_INDEX_NONRESETABLEBREWCNT_LEFT + recipeIndex);
-        parm.u.integer_parm++;
-        NvParmManager::setNvParm(PARM_INDEX_NONRESETABLEBREWCNT_LEFT + recipeIndex, parm);
-
-        NVBlobs->flushNvBlob(PARMS_READ_INDEX);
-        }
-    if (dispense_p->getDispenseCompleteStatus())
-        {
-        myUI->Screen->showMessageNow(&DispenseCompleteMsg);
         }
 
     }

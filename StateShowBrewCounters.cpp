@@ -11,7 +11,7 @@ typedef enum BREW_COUNTER_SUBSTATES
     STATE_RESET_SELECTED_HEAD_COUNTER,
     } brewCountSubstates_t;
 
-static int selectedHead = LEFT_SIDE_RECIPE_INDEX; //FJ changed 4/22 see issue# 2 for details
+static int selectedHead = 1; //FJ changed 4/22 see issue# 2 for details
 static bool isSelectBrewCounterMainInit = false;
 static brewCountSubstates_t brewCounterState = STATE_SELECT_BREW_COUNTER;
 
@@ -79,16 +79,16 @@ void SystemManager::selectHeadAndShowResetableCounter()
         sprintf(RightHeadBuffer, "%d", rightSingleHeadParm.u.integer_parm);
         sprintf(LeftHeadBuffer, "%d", leftHeadParm.u.integer_parm);
 
-        selectedHead = LEFT_SIDE_RECIPE_INDEX; //FJ changed 4/22
+        selectedHead = 1; //FJ changed 4/22
         if (machineFeature->numberOfHeads != 1)
             {
-            if (selectedHead == LEFT_SIDE_RECIPE_INDEX) //FJ changed 4/22
+            if (selectedHead == 1) //FJ changed 4/22
                 {
-                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
                 }
             else
                 {
-                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
                 }
             }
         else
@@ -99,31 +99,31 @@ void SystemManager::selectHeadAndShowResetableCounter()
         }
 
 
-//    if ((releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS) && machineFeature->numberOfHeads != 1)
-//        {
-//        selectedHead = !selectedHead;
-//        if (selectedHead == RIGHT_SIDE_RECIPE_INDEX)
-//            {
-//            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
-//            }
-//        else
-//            {
-//            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
-//            }
-//        }
+    if ((releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS) && machineFeature->numberOfHeads != 1)
+        {
+        selectedHead = !selectedHead;
+        if (selectedHead ==1)
+            {
+            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+            }
+        else
+            {
+            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+            }
+        }
 
     // Change above if statement to below for issue#2
     
-    if (releasedTouchValue == TOUCH_NEXT && machineFeature->numberOfHeads != 1 && selectedHead == LEFT_SIDE_RECIPE_INDEX)
-        {
-        selectedHead = selectedHead + 3;
-        myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
-        }
-    else if (releasedTouchValue == TOUCH_PREVIOUS && machineFeature->numberOfHeads != 1 && selectedHead == RIGHT_SIDE_RECIPE_INDEX)
-        {
-        selectedHead = selectedHead - 3;
-        myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
-        }
+//    if (releasedTouchValue == TOUCH_NEXT && machineFeature->numberOfHeads != 1 && selectedHead == LEFT_SIDE_RECIPE_INDEX)
+//        {
+//        selectedHead = selectedHead + 3;
+//        myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+//        }
+//    else if (releasedTouchValue == TOUCH_PREVIOUS && machineFeature->numberOfHeads != 1 && selectedHead == RIGHT_SIDE_RECIPE_INDEX)
+//        {
+//        selectedHead = selectedHead - 3;
+//        myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+//        }
 
     else if (releasedTouchValue == TOUCH_ACCEPT)
         {
@@ -156,16 +156,16 @@ void SystemManager::selectHeadAndShowNonResetableCounter()
         sprintf(RightHeadBuffer, "%d", rightSingleHeadParm.u.integer_parm);
         sprintf(LeftHeadBuffer, "%d", leftHeadParm.u.integer_parm);
 
-        selectedHead = LEFT_SIDE_RECIPE_INDEX; //FJ changed 4/22
+        selectedHead = 1; //FJ changed 4/22
         if (machineFeature->numberOfHeads != 1)
             {
-            if (selectedHead == LEFT_SIDE_RECIPE_INDEX) //FJ changed 4/22
+            if (selectedHead == 1) //FJ changed 4/22
                 {
-                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
                 }
             else
                 {
-                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
                 }
             }
         else
@@ -175,29 +175,29 @@ void SystemManager::selectHeadAndShowNonResetableCounter()
         initialized = true;
         }
 
-//    if ((releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS) && machineFeature->numberOfHeads != 1)
-//        {
-//        selectedHead = !selectedHead;
-//        if (selectedHead)
-//            {
-//            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
-//            }
-//        else
-//            {
-//            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
-//            }
-//        }
+    if ((releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS) && machineFeature->numberOfHeads != 1)
+        {
+        selectedHead = !selectedHead;
+        if (selectedHead) //Changed from if(selectedHead)
+            {
+            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+            }
+        else
+            {
+            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+            }
+        }
     
-    if (releasedTouchValue == TOUCH_NEXT && machineFeature->numberOfHeads != 1 && selectedHead == LEFT_SIDE_RECIPE_INDEX)
-        {
-        selectedHead = selectedHead + 3;
-        myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
-        }
-    else if (releasedTouchValue == TOUCH_PREVIOUS && machineFeature->numberOfHeads != 1 && selectedHead == RIGHT_SIDE_RECIPE_INDEX)
-        {
-        selectedHead = selectedHead - 3;
-        myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
-        }
+//    if (releasedTouchValue == TOUCH_NEXT && machineFeature->numberOfHeads != 1 && selectedHead == LEFT_SIDE_RECIPE_INDEX)
+//        {
+//        selectedHead = selectedHead + 3;
+//        myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+//        }
+//    else if (releasedTouchValue == TOUCH_PREVIOUS && machineFeature->numberOfHeads != 1 && selectedHead == RIGHT_SIDE_RECIPE_INDEX)
+//        {
+//        selectedHead = selectedHead - 3;
+//        myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+//        }
 
     else if (releasedTouchValue == TOUCH_ACCEPT)
         {
