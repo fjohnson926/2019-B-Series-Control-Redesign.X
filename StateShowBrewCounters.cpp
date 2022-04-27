@@ -84,11 +84,11 @@ void SystemManager::selectHeadAndShowResetableCounter()
             {
             if (selectedHead == 1) //FJ changed 4/22
                 {
-                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
                 }
             else
                 {
-                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
                 }
             }
         else
@@ -104,11 +104,11 @@ void SystemManager::selectHeadAndShowResetableCounter()
         selectedHead = !selectedHead;
         if (selectedHead ==1)
             {
-            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
             }
         else
             {
-            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
             }
         }
 
@@ -161,11 +161,11 @@ void SystemManager::selectHeadAndShowNonResetableCounter()
             {
             if (selectedHead == 1) //FJ changed 4/22
                 {
-                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
                 }
             else
                 {
-                myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+                myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
                 }
             }
         else
@@ -180,11 +180,11 @@ void SystemManager::selectHeadAndShowNonResetableCounter()
         selectedHead = !selectedHead;
         if (selectedHead) //Changed from if(selectedHead)
             {
-            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
+            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
             }
         else
             {
-            myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
+            myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
             }
         }
     

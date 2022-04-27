@@ -15,7 +15,7 @@
 
 #define NUMBER_OF_CHARACTERS_PER_RECIPE 20
 #define NUMBER_OF_PULSES 8
-#define NUMBER_OF_SIZES 1
+#define NUMBER_OF_SIZES 3 //FJ changed to 3
 
 
 typedef struct COFFEE_SIZE_ATTRIBUTES
