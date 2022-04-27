@@ -47,19 +47,19 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
         {
         if (releasedTouchValue == TOUCH_LEFT_SINGLE_BREW) //FJ added 4/25
             {
-            if (machineFeature->numberOfHeads == TWO_HEADS)
+            if (machineFeature->numberOfHeads == 2) //Changed to 2
                 {
                 rightBrewHeadActivated = false;
-                recipeIndex = 1;
+//                recipeIndex = 1;
                 }
             newRecipeIndex = recipeSelectIndex;
             }
         else if (releasedTouchValue == TOUCH_RIGHT_BREW)
             {
-            if (machineFeature->numberOfHeads == TWO_HEADS)
+            if (machineFeature->numberOfHeads == 2)
                 {
                 rightBrewHeadActivated = true;
-                recipeIndex = 0;
+//                recipeIndex = 0;
                 }
             newRecipeIndex = recipeRightSelectIndex;
             }
@@ -107,11 +107,12 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
         NVBlobs->loadNvBlob(PARMS_READ_INDEX);
         NvParm parm;
 
-        if (machineFeature->numberOfHeads == 1 || recipeIndex == 0)
+        if (machineFeature->numberOfHeads == 1 || rightBrewHeadActivated == true)
             {
             //NVBlobs->loadNvBlob(PARMS_READ_INDEX);
             //NvParm parm;
 
+            recipeIndex = 0;
             parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex);
             parm.u.integer_parm++;
             NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm);
@@ -127,6 +128,7 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
             //NVBlobs->loadNvBlob(PARMS_READ_INDEX);
             //NvParm parm;
 
+            recipeIndex = 0;
             parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex);
             parm.u.integer_parm++;
             NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex, parm);
