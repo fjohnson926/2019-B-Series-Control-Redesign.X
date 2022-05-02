@@ -1,5 +1,6 @@
 #include "SystemManager.h"
 #include "NvParmManager.h"
+// FJohnson modified for Added Recipes
 
 char timeString[12];
 char heatingMessage[12];
@@ -12,7 +13,7 @@ ScreenMessages HalfBrewSelectedMsg("HALF BREW", "SELECTED");
 ScreenMessages NormalBrewSelectedMsg("NORMAL BREW", "SELECTED");
 extern int8_t recipeSelectIndex; //FJ added
 extern int8_t recipeRightSelectIndex; //FJ added 4/20
-uint8_t newRecipeIndex = 0;
+uint8_t newRecipeIndex = 0; //FJ Added
 bool rightBrewHeadActivated = false; //FJ added 4/26
 
 
@@ -50,7 +51,7 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
             if (machineFeature->numberOfHeads == 2) //Changed to 2
                 {
                 rightBrewHeadActivated = false;
-//                recipeIndex = 1;
+                //                recipeIndex = 1;
                 }
             newRecipeIndex = recipeSelectIndex;
             }
@@ -59,7 +60,7 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
             if (machineFeature->numberOfHeads == 2)
                 {
                 rightBrewHeadActivated = true;
-//                recipeIndex = 0;
+                //                recipeIndex = 0;
                 }
             newRecipeIndex = recipeRightSelectIndex;
             }
@@ -109,9 +110,6 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
 
         if (machineFeature->numberOfHeads == 1 || rightBrewHeadActivated == true)
             {
-            //NVBlobs->loadNvBlob(PARMS_READ_INDEX);
-            //NvParm parm;
-
             recipeIndex = 0;
             parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex);
             parm.u.integer_parm++;
@@ -121,12 +119,9 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
             parm.u.integer_parm++;
             NvParmManager::setNvParm(PARM_INDEX_NONRESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm);
 
-            //NVBlobs->flushNvBlob(PARMS_READ_INDEX);
             }
         else if (machineFeature->numberOfHeads == 2 && rightBrewHeadActivated == false)
             {
-            //NVBlobs->loadNvBlob(PARMS_READ_INDEX);
-            //NvParm parm;
 
             recipeIndex = 0;
             parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_LEFT + recipeIndex);
@@ -137,29 +132,9 @@ void SystemManager::manageDispenseManagersInNormalMode(DispenseManager * dispens
             parm.u.integer_parm++;
             NvParmManager::setNvParm(PARM_INDEX_NONRESETABLEBREWCNT_LEFT + recipeIndex, parm);
 
-            //NVBlobs->flushNvBlob(PARMS_READ_INDEX);
             }
-//        else if (machineFeature->numberOfHeads == 2 && rightBrewHeadActivated == true)
-//            {
-//            //NVBlobs->loadNvBlob(PARMS_READ_INDEX);
-//            //NvParm parm;
-//
-//            parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex);
-//            parm.u.integer_parm++;
-//            NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm);
-//
-//            parm = NvParmManager::getNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex);
-//            parm.u.integer_parm++;
-//            NvParmManager::setNvParm(PARM_INDEX_RESETABLEBREWCNT_RIGHTSINGLE + recipeIndex, parm);
-//
-//            //NVBlobs->flushNvBlob(PARMS_READ_INDEX);
-//            }
         NVBlobs->flushNvBlob(PARMS_READ_INDEX);
-        
-
         }
-//    rightBrewHeadActivated = false;
-//    recipeIndex = 0;
 
     }
 

@@ -3,6 +3,8 @@
 #include "ScreenMessages.h"
 #include "smath.h"
 
+// FJohnson modified on 5/2/2022
+
 #define BUTTON_HELD_EVENT_SPEED 1000
 
 //HOLD Stages
@@ -46,7 +48,7 @@ extern int numberOfHeads;
 static int currentSingleHeadRecipeMenuItems = 2;
 static int currentDoubleHeadRecipeMenuItems = 5;
 int8_t recipeSelectIndex = 0; //FJ Changed to signed integer
-int8_t recipeRightSelectIndex = 3; //FJ added on 4/20 because RIGHT_SIDE_RECIPE_INDEX = 3
+int8_t recipeRightSelectIndex = 3; //FJ added on 4/20
 bool recipeSelectorInitialized = false;
 char recipeSelectorBottomLine[20];
 ScreenMessages RecipeSelectorMsg("RECIPE SELECTED", recipeSelectorBottomLine, DEFAULT_STATIC_MENU_PRINT_TIME);
@@ -197,7 +199,7 @@ void SystemManager::headSelectHandler()
         headSelectorInitialized = true;
         }
 
-    if (releasedTouchValue == TOUCH_NEXT && headSelectIndex == LEFT_SIDE_RECIPE_INDEX) //FJ changed separated TOUCHES
+    if (releasedTouchValue == TOUCH_NEXT && headSelectIndex == LEFT_SIDE_RECIPE_INDEX) //FJ changed to separate TOUCHES
         {
         headSelectIndex = headSelectIndex + 3;
         updateHeadSelectMsg();
@@ -446,7 +448,7 @@ void SystemManager::pulseSelectHandler(void)
             ramRecipes[recipeRightSelectIndex] = editedRecipe;
             }
 
-        //ramRecipes[recipeSelectIndex] = editedRecipe;
+        //ramRecipes[recipeSelectIndex] = editedRecipe; FJ changed to whats above
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;
         pulseSelectInitialized = false;

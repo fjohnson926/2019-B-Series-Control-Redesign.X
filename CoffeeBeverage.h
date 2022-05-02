@@ -4,6 +4,7 @@
  *  Created on: Sep 5, 2018
  *      Author: JTurner
  *      CoffeeBeverage is the basic storage unit for a given recipe
+ *  Modified by FJohnson 5/2/2022
  */
 
 #ifndef SOURCE_COFFEEBEVERAGE_H_
@@ -15,7 +16,7 @@
 
 #define NUMBER_OF_CHARACTERS_PER_RECIPE 20
 #define NUMBER_OF_PULSES 8
-#define NUMBER_OF_SIZES 1 //FJ changed to 3
+#define NUMBER_OF_SIZES 1
 
 
 typedef struct COFFEE_SIZE_ATTRIBUTES
@@ -31,13 +32,13 @@ public:
 	CoffeeBeverage();
     CoffeeBeverage & operator=(const CoffeeBeverage & source);
 	CoffeeBeverage(const char * flavorName, int size, const CoffeeSizeAttributes_t * recipeData);
-    uint8_t getPulseCount(uint8_t size = 0);    //Change from 0 to 2
+    uint8_t getPulseCount(uint8_t size = 0);
 	char name[NUMBER_OF_CHARACTERS_PER_RECIPE];
 	CoffeeSizeAttributes_t size[NUMBER_OF_SIZES];    
 };
 
 //Should only have one recipe to modify.
-uint8_t getPulseCount(CoffeeBeverage * beverage, uint8_t size = 0); // change from 0 to 2
+uint8_t getPulseCount(CoffeeBeverage * beverage, uint8_t size = 0);
 
 #endif
 
