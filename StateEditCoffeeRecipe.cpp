@@ -718,7 +718,7 @@ void SystemManager::editSelectedPulseOffHandler(void)
             }
         else
             {
-            ramRecipes[headSelectIndex] = editedRecipe;
+            ramRecipes[recipeRightSelectIndex] = editedRecipe;
             }
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         if (editEntireRecipeAnswer)
