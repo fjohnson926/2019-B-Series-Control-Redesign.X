@@ -1,8 +1,8 @@
 /*
  * CoffeeBeverageDefaults.h
  *
- *  Created on: Sep 5, 2018
- *      Author: JTurner
+ *  Created on: Oct 28, 2022
+ *      Author: JTurner/FJohnson
  */
 
 #ifndef SOURCE_COFFEEBEVERAGEDEFAULTS_H_
@@ -20,7 +20,7 @@ const CoffeeSizeAttributes_t defaultCoffeeDecanterContainer[NUMBER_OF_SIZES] =
 const CoffeeSizeAttributes_t defaultCoffeeAirPotContainer[NUMBER_OF_SIZES] =
 {
   {
-    {163,0,0,0,0,0,0,0}, //Pulse On
+    {130,0,0,0,0,0,0,0}, //Pulse On
     {0,0,0,0,0,0,0,0}, //Pulse Off
   },
 };
@@ -29,7 +29,7 @@ const CoffeeSizeAttributes_t defaultCoffeeAirPotContainer[NUMBER_OF_SIZES] =
 const CoffeeSizeAttributes_t defaultCoffeeGravityPotContainer[NUMBER_OF_SIZES] =
 {
   {
-    {185,0,0,0,0,0,0,0}, //Pulse On
+    {150,0,0,0,0,0,0,0}, //Pulse On
     {0,0,0,0,0,0,0,0}, //Pulse Off
   },
 };

@@ -2,7 +2,7 @@
 /** Descriptive File Name
 
   @Company
-    Company Name
+ Electrolux Professional
 
   @File Name
     filename.h
@@ -23,7 +23,7 @@
 extern "C" {
 #endif
 
-#define VERSION_STR "1.1.1"
+#define VERSION_STR "1.1.2"
 
 /* Provide C++ Compatibility */    
 #ifdef __cplusplus

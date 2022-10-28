@@ -371,18 +371,18 @@ int getNumberOfPulses(void)
     return lastestPulse;
     }
 
-void findLastOnTimePulseClearSecondLastOffPulse(void)
-    {
-    int pulses = getNumberOfPulses();
-    if (pulses != 1)
-        {
-        editedRecipe.size[0].pulseOffTimeSeconds[pulses - 1] = 0;
-        }
-    else
-        {
-        editedRecipe.size[0].pulseOffTimeSeconds[0] = 0;
-        }
-    }
+//void findLastOnTimePulseClearSecondLastOffPulse(void) //FJ 10-28-22
+//    {
+//    int pulses = getNumberOfPulses();
+//    if (pulses != 1)
+//        {
+//        editedRecipe.size[0].pulseOffTimeSeconds[pulses - 1] = 0;
+//        }
+//    else
+//        {
+//        editedRecipe.size[0].pulseOffTimeSeconds[0] = 0;
+//        }
+//    }
 
 void checkAndFixPulseOffTimes()
     {
@@ -396,11 +396,11 @@ void checkAndFixPulseOffTimes()
                 editedRecipe.size[0].pulseOffTimeSeconds[i] = MIN_PREV_OFF_TIME_FOR_NEW_PULSE;
                 }
             }
-        editedRecipe.size[0].pulseOffTimeSeconds[pulseCount - 1] = 0;
+//        editedRecipe.size[0].pulseOffTimeSeconds[pulseCount - 1] = 0; //FJ 10-28-22
         }
     else
         {
-        editedRecipe.size[0].pulseOffTimeSeconds[pulseCount - 1] = 0;
+//        editedRecipe.size[0].pulseOffTimeSeconds[pulseCount - 1] = 0; //FJ 10-28-22
         }
     }
 

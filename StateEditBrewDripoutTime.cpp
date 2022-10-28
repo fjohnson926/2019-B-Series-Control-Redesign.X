@@ -27,7 +27,7 @@ static void updateLockoutBuffer()
 {
     if(uiEditBrewLockoutTimeS)
     {
-      sprintf(editLockoutTimeBuffer,"%ds", uiEditBrewLockoutTimeS);
+      sprintf(editLockoutTimeBuffer,"%ds", uiEditBrewLockoutTimeS); // Changed "%ds" to "%s" FJ
     }
     else
     {
