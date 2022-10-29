@@ -593,7 +593,7 @@ void SystemManager::editSelectedPulseOnHandler(void)
             editEntireRecipeAnswer = false;
             currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_PULSE;
             }
-        else if (pulseNumberEdited == NUMBER_OF_PULSES - 1)
+        else if (pulseNumberEdited == NUMBER_OF_PULSES) // FJ changed was (NUMBER_OF_PULSES -1)
             {
             editEntireRecipeAnswer = false;
             currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_PULSE;
@@ -725,7 +725,7 @@ void SystemManager::editSelectedPulseOffHandler(void)
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         if (editEntireRecipeAnswer)
             {
-            if (pulseNumberEdited < NUMBER_OF_PULSES - 1)
+            if (pulseNumberEdited < NUMBER_OF_PULSES)   //FJ deleted was NUMBER_OF_PULSES - 1
                 {
                 pulseNumberEdited++;
                 currentCoffeeBeverageEditState = COFFEE_BEVERAGE_EDIT_SELECTED_PULSE_ON;
