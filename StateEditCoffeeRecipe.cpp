@@ -333,15 +333,16 @@ void recipeCleanup(void)
     if (editedRecipe.size[0].pulseOnTimeSeconds[pulseNumberEdited] == 0 && pulseNumberEdited != 0)
         {
         //Zero out previous pulse's off time 
-        editedRecipe.size[0].pulseOffTimeSeconds[pulseNumberEdited - 1] = 0;
-
+//        editedRecipe.size[0].pulseOffTimeSeconds[pulseNumberEdited - 1] = 0; //FJ 10/31/22
+        
         //Zero out 
         for (int i = pulseNumberEdited; i < NUMBER_OF_PULSES; i++)
             {
             editedRecipe.size[0].pulseOnTimeSeconds[i] = 0;
             editedRecipe.size[0].pulseOffTimeSeconds[i] = 0;
             }
-        editedRecipe.size[0].pulseOffTimeSeconds[pulseNumberEdited - 1] = 0;
+        //Zero out previous Pulse off time
+//        editedRecipe.size[0].pulseOffTimeSeconds[pulseNumberEdited - 1] = 0; //FJ 10/31/22
         }
 
     //Make sure all pulses up to edited pulse have a minimum off time
@@ -593,11 +594,11 @@ void SystemManager::editSelectedPulseOnHandler(void)
             editEntireRecipeAnswer = false;
             currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_PULSE;
             }
-        else if (pulseNumberEdited == NUMBER_OF_PULSES) // FJ changed was (NUMBER_OF_PULSES -1)
-            {
-            editEntireRecipeAnswer = false;
-            currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_PULSE;
-            }
+//        else if (pulseNumberEdited == NUMBER_OF_PULSES - 1) // FJ 
+//            {
+//            editEntireRecipeAnswer = false; // FJ changed 10/31/22
+//            currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_PULSE;
+//            }
         else
             {
             currentCoffeeBeverageEditState = COFFEE_BEVERAGE_EDIT_SELECTED_PULSE_OFF;
@@ -725,7 +726,7 @@ void SystemManager::editSelectedPulseOffHandler(void)
         NVBlobs->flushNvBlob(COFFEE_RECIPE_BLOB_INDEX);
         if (editEntireRecipeAnswer)
             {
-            if (pulseNumberEdited < NUMBER_OF_PULSES)   //FJ deleted was NUMBER_OF_PULSES - 1
+            if (pulseNumberEdited < NUMBER_OF_PULSES - 1)   //FJ
                 {
                 pulseNumberEdited++;
                 currentCoffeeBeverageEditState = COFFEE_BEVERAGE_EDIT_SELECTED_PULSE_ON;
@@ -734,6 +735,7 @@ void SystemManager::editSelectedPulseOffHandler(void)
                 }
             else
                 {
+                editEntireRecipeAnswer = false; //FJ added 10/31/22
                 currentCoffeeBeverageEditState = COFFEE_BEVERAGE_SELECT_PULSE;
                 }
             }

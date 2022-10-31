@@ -23,7 +23,7 @@
 extern "C" {
 #endif
 
-#define VERSION_STR "1.1.3"
+#define VERSION_STR "1.1.4"
 
 /* Provide C++ Compatibility */    
 #ifdef __cplusplus
