@@ -31,7 +31,7 @@ void setupMenus(void)
         addMenu(EDIT_ENERGY_SAVINGS, &EditEnergySavingsMsg);
         addMenu(EDIT_COFFEE_RECIPE, &EditCoffeeRecipesMsg);
         addMenu(TEACH_MODE, &TeachModeMsg);
-        addMenu(EDIT_DRIPOUT_TIME, &MenuBrewDripoutMsg);
+//        addMenu(EDIT_DRIPOUT_TIME, &MenuBrewDripoutMsg);
         addMenu(SHOW_BREW_COUNTS, &ShowBrewCountMsg);
         addMenu(RESET_DEFAULT, &ResetToDefaultMsg);        
         addMenu(VIEW_TEMPERATURES, &ViewTemperaturesMsg);
