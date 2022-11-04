@@ -37,7 +37,6 @@ typedef enum COFFEE_BEVERAGE_EDITOR
 CoffeeBeverageEditorStates_t currentCoffeeBeverageEditState = COFFEE_BEVERERAGE_EDITOR_INIT;
 CoffeeBeverage editedRecipe;
 uint8_t pulseNumberEdited = 0;
-bool singleHeadUnit = false;
 bool recipeSelectorStateInitialized = false;
 int buttonHoldCount = 0;
 signed int lastTouchButton;

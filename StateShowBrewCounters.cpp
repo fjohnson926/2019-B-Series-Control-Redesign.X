@@ -11,7 +11,8 @@ typedef enum BREW_COUNTER_SUBSTATES
     STATE_RESET_SELECTED_HEAD_COUNTER,
     } brewCountSubstates_t;
 
-static int selectedHead = 1; //FJ changed 4/22 see issue# 2 for details
+static int selectedHead = 0; //FJ changed 11/3/22 see issue# 2 for details
+bool singleHeadUnit = true;
 static bool isSelectBrewCounterMainInit = false;
 static brewCountSubstates_t brewCounterState = STATE_SELECT_BREW_COUNTER;
 
@@ -79,9 +80,9 @@ void SystemManager::selectHeadAndShowResetableCounter()
         sprintf(RightHeadBuffer, "%d", rightSingleHeadParm.u.integer_parm);
         sprintf(LeftHeadBuffer, "%d", leftHeadParm.u.integer_parm);
 
-        selectedHead = 1; //FJ changed 4/22
         if (machineFeature->numberOfHeads != 1)
             {
+            selectedHead = 1; //FJ 11/3/22
             if (selectedHead == 1) //FJ changed 4/22
                 {
                 myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
@@ -102,7 +103,7 @@ void SystemManager::selectHeadAndShowResetableCounter()
     if ((releasedTouchValue == TOUCH_NEXT || releasedTouchValue == TOUCH_PREVIOUS) && machineFeature->numberOfHeads != 1)
         {
         selectedHead = !selectedHead;
-        if (selectedHead ==1)
+        if (selectedHead == 1)
             {
             myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
             }
@@ -114,14 +115,22 @@ void SystemManager::selectHeadAndShowResetableCounter()
 
     // Change above if statement to below for issue#2
     
-//    if (releasedTouchValue == TOUCH_NEXT && machineFeature->numberOfHeads != 1 && selectedHead == LEFT_SIDE_RECIPE_INDEX)
+//    if (releasedTouchValue == TOUCH_NEXT && machineFeature->numberOfHeads != 1)
 //        {
 //        selectedHead = selectedHead + 3;
+//        if (selectedHead > 3)
+//            {
+//            selectedHead = 0;
+//            }
 //        myUI->Screen->showMessageNow(&SelectedRightHeadMsg);
 //        }
 //    else if (releasedTouchValue == TOUCH_PREVIOUS && machineFeature->numberOfHeads != 1 && selectedHead == RIGHT_SIDE_RECIPE_INDEX)
 //        {
 //        selectedHead = selectedHead - 3;
+//            if (selectedHead < 0)
+//            {
+//            selectedHead = 3;
+//            }
 //        myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);
 //        }
 
@@ -146,7 +155,7 @@ void SystemManager::selectHeadAndShowNonResetableCounter()
     static char LeftHeadBuffer[20];
     static ScreenMessages SelectedRightHeadMsg("RIGHT COUNT", RightHeadBuffer, DEFAULT_STATIC_MENU_PRINT_TIME);
     static ScreenMessages SelectedLeftHeadMsg("LEFT COUNT", LeftHeadBuffer, DEFAULT_STATIC_MENU_PRINT_TIME);
-    static ScreenMessages SingleHeadMsg("COUNT", RightHeadBuffer, DEFAULT_STATIC_MENU_PRINT_TIME);
+    static ScreenMessages SingleHeadMsg("COUNT", RightHeadBuffer, DEFAULT_STATIC_MENU_PRINT_TIME); //FJ 11/3/22
     if (!initialized)
         {
         NVBlobs->loadNvBlob(PARMS_READ_INDEX);
@@ -156,9 +165,9 @@ void SystemManager::selectHeadAndShowNonResetableCounter()
         sprintf(RightHeadBuffer, "%d", rightSingleHeadParm.u.integer_parm);
         sprintf(LeftHeadBuffer, "%d", leftHeadParm.u.integer_parm);
 
-        selectedHead = 1; //FJ changed 4/22
         if (machineFeature->numberOfHeads != 1)
             {
+            selectedHead = 1; //FJ added 11/3/22
             if (selectedHead == 1) //FJ changed 4/22
                 {
                 myUI->Screen->showMessageNow(&SelectedLeftHeadMsg);

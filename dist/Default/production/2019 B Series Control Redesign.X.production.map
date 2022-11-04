@@ -27,7 +27,7 @@ c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/.
 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
                               c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_scalbn.o) (copysign)
 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
-                              C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o (__pic32c_data_initialization)
+                              C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o (__pic32c_data_initialization)
 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
                               build/Default/production/hpl/sercom/hpl_sercom.o (__aeabi_dsub)
 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
@@ -497,42 +497,42 @@ section                    address  length [bytes]      (dec)  Description
 .data                   0x2001eb68          0x477        1143  Initialized data 
 .data                   0x2001efe0          0x23a         570  Initialized data 
 .data                   0x2001f21c          0x239         569  Initialized data 
-.data                   0x2001f458          0x235         565  Initialized data 
-.data                   0x2001f690         0x3d48       15688  Initialized data 
-.data.__global_locale   0x200233d8          0x16c         364   
-.bss                    0x20023544          0x349         841  Uninitialized data 
-.bss                    0x20023890          0x151         337  Uninitialized data 
-.bss                    0x200239e4           0x33          51  Uninitialized data 
-.data                   0x20023a18           0x30          48  Initialized data 
-.bss.__malloc_current_m 0x20023a48           0x28          40   
-.bss                    0x20023a70           0x35          53  Uninitialized data 
-.bss                    0x20023aa8           0x18          24  Uninitialized data 
-.data                   0x20023ac0           0x10          16  Initialized data 
-.bss                    0x20023ad0           0x31          49  Uninitialized data 
-.data                   0x20023b04            0x4           4  Initialized data 
-.bss                    0x20023b08            0xc          12  Uninitialized data 
-.data                   0x20023b14            0x8           8  Initialized data 
-.bss                    0x20023b1c            0x8           8  Uninitialized data 
-.data._impure_ptr       0x20023b24            0x4           4   
-.bss._PathLocale        0x20023b28            0x4           4   
-.bss.__malloc_max_sbrke 0x20023b2c            0x4           4   
-.bss.__malloc_max_total 0x20023b30            0x4           4   
-.bss.__malloc_top_pad   0x20023b34            0x4           4   
-.data.__malloc_sbrk_bas 0x20023b38            0x4           4   
-.data.__malloc_trim_thr 0x20023b3c            0x4           4   
-.eh_frame               0x20023b40            0x4           4   
-.jcr                    0x20023b44            0x4           4   
-         Total RAM used  :     0x23b0d      146189  55.8% of 0x40000
+.data                   0x2001f458          0x69a        1690  Initialized data 
+.data                   0x2001faf4         0x38e0       14560  Initialized data 
+.data.__global_locale   0x200233d4          0x16c         364   
+.bss                    0x20023540          0x349         841  Uninitialized data 
+.bss                    0x2002388c          0x151         337  Uninitialized data 
+.bss                    0x200239e0           0x33          51  Uninitialized data 
+.data                   0x20023a14           0x30          48  Initialized data 
+.bss.__malloc_current_m 0x20023a44           0x28          40   
+.bss                    0x20023a6c           0x35          53  Uninitialized data 
+.bss                    0x20023aa4           0x18          24  Uninitialized data 
+.data                   0x20023abc           0x10          16  Initialized data 
+.bss                    0x20023acc           0x31          49  Uninitialized data 
+.data                   0x20023b00            0x4           4  Initialized data 
+.bss                    0x20023b04            0xc          12  Uninitialized data 
+.data                   0x20023b10            0x8           8  Initialized data 
+.bss                    0x20023b18            0x8           8  Uninitialized data 
+.data._impure_ptr       0x20023b20            0x4           4   
+.bss._PathLocale        0x20023b24            0x4           4   
+.bss.__malloc_max_sbrke 0x20023b28            0x4           4   
+.bss.__malloc_max_total 0x20023b2c            0x4           4   
+.bss.__malloc_top_pad   0x20023b30            0x4           4   
+.data.__malloc_sbrk_bas 0x20023b34            0x4           4   
+.data.__malloc_trim_thr 0x20023b38            0x4           4   
+.eh_frame               0x20023b3c            0x4           4   
+.jcr                    0x20023b40            0x4           4   
+         Total RAM used  :     0x23b0a      146186  55.8% of 0x40000
         --------------------------------------------------------------------------
-            Total Data Memory used  :     0x23b0d      146189  55.8% of 0x40000
+            Total Data Memory used  :     0x23b0a      146186  55.8% of 0x40000
         --------------------------------------------------------------------------
 
 
 Dynamic Data-Memory Reservation
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-heap                    0x20023b50           0x10          16  Reserved for heap 
-stack                   0x20023b78        0x1c480      115840  Reserved for stack 
+heap                    0x20023b48           0x10          16  Reserved for heap 
+stack                   0x20023b70        0x1c480      115840  Reserved for stack 
 
         --------------------------------------------------------------------------
 
@@ -746,7 +746,7 @@ LOAD build/Default/production/StateFCTAllOutputsOnTest.o
                 0x0000c000                _sfixed = .
  *(.vectors .vectors.* .vectors_default .vectors_default.*)
  .vectors.default
-                0x0000c000      0x264 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+                0x0000c000      0x264 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
                 0x0000c000                exception_table
  *(.isr_vector)
  *(.reset*)
@@ -1021,7 +1021,7 @@ LOAD build/Default/production/StateFCTAllOutputsOnTest.o
                 0x2003ffff                _ram_end_ = ((ORIGIN (ram) + LENGTH (ram)) - 0x1)
 LOAD c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libstdc++.a
 LOAD c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a
-LOAD C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+LOAD C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
 START GROUP
 LOAD c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a
 LOAD c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a
@@ -1307,7 +1307,7 @@ LOAD data_init
  .ARM.attributes
                 0x00001d51       0x34 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
  .ARM.attributes
-                0x00001d85       0x39 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+                0x00001d85       0x39 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
  .ARM.attributes
                 0x00001dbe       0x34 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
  .ARM.attributes
@@ -1605,7 +1605,7 @@ LOAD data_init
  .comment       0x0000003c       0x3d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_rint.o)
  .comment       0x0000003c       0x3d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_scalbn.o)
  .comment       0x0000003c       0x3d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
- .comment       0x0000003c       0x3d C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+ .comment       0x0000003c       0x3d C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
  .comment       0x0000003c       0x3d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
  .comment       0x0000003c       0x3d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
  .comment       0x0000003c       0x3d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
@@ -1886,7 +1886,7 @@ LOAD data_init
  .debug_line    0x00030fb0       0xae c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_getc.o)
  .debug_line    0x0003105e       0xad c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_putc.o)
 
-.debug_info     0x00000000   0x260bbd
+.debug_info     0x00000000   0x260ba4
  .debug_info    0x00000000      0x120 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard/crt0.o
  .debug_info    0x00000120      0x2fb build/Default/production/gcc/system_same54.o
  .debug_info    0x0000041b      0x45c build/Default/production/hal/src/hal_atomic.o
@@ -1979,128 +1979,128 @@ LOAD data_init
  .debug_info    0x000e89f7     0x125a build/Default/production/EnergySavingsManager.o
  .debug_info    0x000e9c51     0xa073 build/Default/production/StateEnergySavings.o
  .debug_info    0x000f3cc4     0xa079 build/Default/production/StateEditTimeFormat.o
- .debug_info    0x000fdd3d     0xa785 build/Default/production/StateEditCoffeeRecipe.o
- .debug_info    0x001084c2     0x9dfd build/Default/production/RAMRecipes.o
- .debug_info    0x001122bf     0xa425 build/Default/production/StateTeachMode.o
- .debug_info    0x0011c6e4     0x9c69 build/Default/production/StateScreenTest.o
- .debug_info    0x0012634d     0xa406 build/Default/production/StateShowBrewCounters.o
- .debug_info    0x00130753     0xa074 build/Default/production/StateEditLowTempNoBrew.o
- .debug_info    0x0013a7c7     0x9d4d build/Default/production/StateResetSystemSettings.o
- .debug_info    0x00144514     0xabab build/Default/production/StateAutomaticTestMode.o
- .debug_info    0x0014f0bf     0x9d3d build/Default/production/StateViewTemperature.o
- .debug_info    0x00158dfc     0x9e39 build/Default/production/StateViewWaterLevels.o
- .debug_info    0x00162c35     0x9f58 build/Default/production/StateStandbyMode.o
- .debug_info    0x0016cb8d     0x9d56 build/Default/production/StateFCTMainMenu.o
- .debug_info    0x001768e3     0x9dd9 build/Default/production/StateFCTControlCoffeeOutput.o
- .debug_info    0x001806bc     0xae5f build/Default/production/StateFCTControlTeaOutput.o
- .debug_info    0x0018b51b     0x9d09 build/Default/production/StateFCTControlTankOutput.o
- .debug_info    0x00195224     0x9d97 build/Default/production/StateFCTControlLEDOutput.o
- .debug_info    0x0019efbb     0x9d4c build/Default/production/StateViewTankInputs.o
- .debug_info    0x001a8d07     0xa874 build/Default/production/StateFCTViewReedInputs.o
- .debug_info    0x001b357b     0xa876 build/Default/production/StateFCTViewDipswitch.o
- .debug_info    0x001bddf1     0xa8a0 build/Default/production/StateFCTViewOnBrdUserInputs.o
- .debug_info    0x001c8691     0x9cd5 build/Default/production/StateFCTTouchTest.o
- .debug_info    0x001d2366     0x9dce build/Default/production/StateFCTTestSPIFlash.o
- .debug_info    0x001dc134     0xa025 build/Default/production/StateEditBrewDripoutTime.o
- .debug_info    0x001e6159     0x9d45 build/Default/production/StateViewPreErrorTempLog.o
- .debug_info    0x001efe9e     0x9d4b build/Default/production/StateViewPostErrorTempLog.o
- .debug_info    0x001f9be9     0x1f2e build/Default/production/WtchDog.o
- .debug_info    0x001fbb17      0x9a2 build/Default/production/smath.o
- .debug_info    0x001fc4b9     0xa876 build/Default/production/StateFCTAllOutputsOnTest.o
- .debug_info    0x00206d2f     0x100e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_log.o)
- .debug_info    0x00207d3d     0x1110 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_pow.o)
- .debug_info    0x00208e4d     0x110e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_log.o)
- .debug_info    0x00209f5b     0x1563 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_pow.o)
- .debug_info    0x0020b4be     0x102d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_sqrt.o)
- .debug_info    0x0020c4eb      0xf41 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fabs.o)
- .debug_info    0x0020d42c      0xf36 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_finite.o)
- .debug_info    0x0020e362      0xe61 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
- .debug_info    0x0020f1c3      0xf15 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
- .debug_info    0x002100d8      0xe99 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
- .debug_info    0x00210f71     0x101e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_rint.o)
- .debug_info    0x00211f8f     0x1069 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_scalbn.o)
- .debug_info    0x00212ff8      0xf78 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
- .debug_info    0x00213f70      0x2b1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
- .debug_info    0x00214221      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x00214346      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
- .debug_info    0x0021446b      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
- .debug_info    0x00214590      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_unorddf2.o)
- .debug_info    0x002146b5      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixdfsi.o)
- .debug_info    0x002147da      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
- .debug_info    0x002148ff      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
- .debug_info    0x00214a24      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubsf3.o)
- .debug_info    0x00214b49      0x120 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x00214c69     0x229f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
- .debug_info    0x00216f08     0x319c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
- .debug_info    0x0021a0a4      0x124 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
- .debug_info    0x0021a1c8      0xe2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
- .debug_info    0x0021aff2      0x124 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
- .debug_info    0x0021b116      0xeac c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-abort.o)
- .debug_info    0x0021bfc2      0xf93 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-assert.o)
- .debug_info    0x0021cf55      0xe2e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
- .debug_info    0x0021dd83      0xebd c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-exit.o)
- .debug_info    0x0021ec40      0xfc7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fiprintf.o)
- .debug_info    0x0021fc07      0xdf1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
- .debug_info    0x002209f8      0x427 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
- .debug_info    0x00220e1f      0xe6d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcmp.o)
- .debug_info    0x00221c8c      0x13a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
- .debug_info    0x00221dc6     0x1606 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
- .debug_info    0x002233cc     0x1211 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
- .debug_info    0x002245dd     0x1229 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signal.o)
- .debug_info    0x00225806      0xf50 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signalr.o)
- .debug_info    0x00226756     0x132a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-snprintf.o)
- .debug_info    0x00227a80      0xe0d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcpy.o)
- .debug_info    0x0022888d      0x139 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
- .debug_info    0x002289c6     0x2903 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfprintf.o)
- .debug_info    0x0022b2c9     0x269f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
- .debug_info    0x0022d968     0x2ae9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
- .debug_info    0x00230451     0x11f4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wsetup.o)
- .debug_info    0x00231645      0xf6d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
- .debug_info    0x002325b2      0xe82 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
- .debug_info    0x00233434     0x2135 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
- .debug_info    0x00235569     0x135f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
- .debug_info    0x002368c8     0x1727 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
- .debug_info    0x00237fef      0x3ec c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
- .debug_info    0x002383db     0x1419 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
- .debug_info    0x002397f4     0x13d9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
- .debug_info    0x0023abcd     0x150c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fvwrite.o)
- .debug_info    0x0023c0d9     0x1272 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fwalk.o)
- .debug_info    0x0023d34b     0x18a1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
- .debug_info    0x0023ebec     0x16ba c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-localeconv.o)
- .debug_info    0x002402a6     0x15c1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
- .debug_info    0x00241867     0x157a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
- .debug_info    0x00242de1     0x1789 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mbtowc_r.o)
- .debug_info    0x0024456a      0x133 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memchr.o)
- .debug_info    0x0024469d     0x1628 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memmove.o)
- .debug_info    0x00245cc5      0xe4b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
- .debug_info    0x00246b10     0x257e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
- .debug_info    0x0024908e     0x14f8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reallocr.o)
- .debug_info    0x0024a586      0xf9d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reent.o)
- .debug_info    0x0024b523      0xfb7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-s_frexp.o)
- .debug_info    0x0024c4da      0xee1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-sbrkr.o)
- .debug_info    0x0024d3bb     0x1429 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
- .debug_info    0x0024e7e4      0x139 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcmp.o)
- .debug_info    0x0024e91d      0xe8d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strncpy.o)
- .debug_info    0x0024f7aa     0x21d8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfiprintf.o)
- .debug_info    0x00251982     0x1279 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wbuf.o)
- .debug_info    0x00252bfb     0x180a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wcrtomb.o)
- .debug_info    0x00254405     0x1754 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wctomb_r.o)
- .debug_info    0x00255b59      0xf18 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o)
- .debug_info    0x00256a71      0xeee c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
- .debug_info    0x0025795f     0x1265 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-callocr.o)
- .debug_info    0x00258bc4      0xec8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o)
- .debug_info    0x00259a8c     0x1586 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-ctype_.o)
- .debug_info    0x0025b012     0x12ae c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fclose.o)
- .debug_info    0x0025c2c0     0x11bd c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o)
- .debug_info    0x0025d47d      0xecd c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o)
- .debug_info    0x0025e34a      0xef9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o)
- .debug_info    0x0025f243      0xf10 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o)
- .debug_info    0x00260153      0x296 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(read.o)
- .debug_info    0x002603e9      0x298 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(write.o)
- .debug_info    0x00260681      0x29e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_getc.o)
- .debug_info    0x0026091f      0x29e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_putc.o)
+ .debug_info    0x000fdd3d     0xa767 build/Default/production/StateEditCoffeeRecipe.o
+ .debug_info    0x001084a4     0x9dfd build/Default/production/RAMRecipes.o
+ .debug_info    0x001122a1     0xa425 build/Default/production/StateTeachMode.o
+ .debug_info    0x0011c6c6     0x9c69 build/Default/production/StateScreenTest.o
+ .debug_info    0x0012632f     0xa40b build/Default/production/StateShowBrewCounters.o
+ .debug_info    0x0013073a     0xa074 build/Default/production/StateEditLowTempNoBrew.o
+ .debug_info    0x0013a7ae     0x9d4d build/Default/production/StateResetSystemSettings.o
+ .debug_info    0x001444fb     0xabab build/Default/production/StateAutomaticTestMode.o
+ .debug_info    0x0014f0a6     0x9d3d build/Default/production/StateViewTemperature.o
+ .debug_info    0x00158de3     0x9e39 build/Default/production/StateViewWaterLevels.o
+ .debug_info    0x00162c1c     0x9f58 build/Default/production/StateStandbyMode.o
+ .debug_info    0x0016cb74     0x9d56 build/Default/production/StateFCTMainMenu.o
+ .debug_info    0x001768ca     0x9dd9 build/Default/production/StateFCTControlCoffeeOutput.o
+ .debug_info    0x001806a3     0xae5f build/Default/production/StateFCTControlTeaOutput.o
+ .debug_info    0x0018b502     0x9d09 build/Default/production/StateFCTControlTankOutput.o
+ .debug_info    0x0019520b     0x9d97 build/Default/production/StateFCTControlLEDOutput.o
+ .debug_info    0x0019efa2     0x9d4c build/Default/production/StateViewTankInputs.o
+ .debug_info    0x001a8cee     0xa874 build/Default/production/StateFCTViewReedInputs.o
+ .debug_info    0x001b3562     0xa876 build/Default/production/StateFCTViewDipswitch.o
+ .debug_info    0x001bddd8     0xa8a0 build/Default/production/StateFCTViewOnBrdUserInputs.o
+ .debug_info    0x001c8678     0x9cd5 build/Default/production/StateFCTTouchTest.o
+ .debug_info    0x001d234d     0x9dce build/Default/production/StateFCTTestSPIFlash.o
+ .debug_info    0x001dc11b     0xa025 build/Default/production/StateEditBrewDripoutTime.o
+ .debug_info    0x001e6140     0x9d45 build/Default/production/StateViewPreErrorTempLog.o
+ .debug_info    0x001efe85     0x9d4b build/Default/production/StateViewPostErrorTempLog.o
+ .debug_info    0x001f9bd0     0x1f2e build/Default/production/WtchDog.o
+ .debug_info    0x001fbafe      0x9a2 build/Default/production/smath.o
+ .debug_info    0x001fc4a0     0xa876 build/Default/production/StateFCTAllOutputsOnTest.o
+ .debug_info    0x00206d16     0x100e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_log.o)
+ .debug_info    0x00207d24     0x1110 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_pow.o)
+ .debug_info    0x00208e34     0x110e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_log.o)
+ .debug_info    0x00209f42     0x1563 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_pow.o)
+ .debug_info    0x0020b4a5     0x102d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_sqrt.o)
+ .debug_info    0x0020c4d2      0xf41 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fabs.o)
+ .debug_info    0x0020d413      0xf36 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_finite.o)
+ .debug_info    0x0020e349      0xe61 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+ .debug_info    0x0020f1aa      0xf15 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .debug_info    0x002100bf      0xe99 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .debug_info    0x00210f58     0x101e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_rint.o)
+ .debug_info    0x00211f76     0x1069 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_scalbn.o)
+ .debug_info    0x00212fdf      0xf78 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
+ .debug_info    0x00213f57      0x2b1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_info    0x00214208      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x0021432d      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00214452      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x00214577      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_info    0x0021469c      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixdfsi.o)
+ .debug_info    0x002147c1      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_info    0x002148e6      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_info    0x00214a0b      0x125 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubsf3.o)
+ .debug_info    0x00214b30      0x120 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00214c50     0x229f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00216eef     0x319c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .debug_info    0x0021a08b      0x124 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+ .debug_info    0x0021a1af      0xe2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+ .debug_info    0x0021afd9      0x124 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+ .debug_info    0x0021b0fd      0xeac c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-abort.o)
+ .debug_info    0x0021bfa9      0xf93 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-assert.o)
+ .debug_info    0x0021cf3c      0xe2e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .debug_info    0x0021dd6a      0xebd c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-exit.o)
+ .debug_info    0x0021ec27      0xfc7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fiprintf.o)
+ .debug_info    0x0021fbee      0xdf1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .debug_info    0x002209df      0x427 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
+ .debug_info    0x00220e06      0xe6d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcmp.o)
+ .debug_info    0x00221c73      0x13a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+ .debug_info    0x00221dad     0x1606 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .debug_info    0x002233b3     0x1211 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
+ .debug_info    0x002245c4     0x1229 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signal.o)
+ .debug_info    0x002257ed      0xf50 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signalr.o)
+ .debug_info    0x0022673d     0x132a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-snprintf.o)
+ .debug_info    0x00227a67      0xe0d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcpy.o)
+ .debug_info    0x00228874      0x139 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+ .debug_info    0x002289ad     0x2903 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfprintf.o)
+ .debug_info    0x0022b2b0     0x269f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
+ .debug_info    0x0022d94f     0x2ae9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+ .debug_info    0x00230438     0x11f4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wsetup.o)
+ .debug_info    0x0023162c      0xf6d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_info    0x00232599      0xe82 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
+ .debug_info    0x0023341b     0x2135 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
+ .debug_info    0x00235550     0x135f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
+ .debug_info    0x002368af     0x1727 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+ .debug_info    0x00237fd6      0x3ec c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
+ .debug_info    0x002383c2     0x1419 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
+ .debug_info    0x002397db     0x13d9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
+ .debug_info    0x0023abb4     0x150c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fvwrite.o)
+ .debug_info    0x0023c0c0     0x1272 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fwalk.o)
+ .debug_info    0x0023d332     0x18a1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+ .debug_info    0x0023ebd3     0x16ba c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-localeconv.o)
+ .debug_info    0x0024028d     0x15c1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
+ .debug_info    0x0024184e     0x157a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+ .debug_info    0x00242dc8     0x1789 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mbtowc_r.o)
+ .debug_info    0x00244551      0x133 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memchr.o)
+ .debug_info    0x00244684     0x1628 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memmove.o)
+ .debug_info    0x00245cac      0xe4b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
+ .debug_info    0x00246af7     0x257e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+ .debug_info    0x00249075     0x14f8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reallocr.o)
+ .debug_info    0x0024a56d      0xf9d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reent.o)
+ .debug_info    0x0024b50a      0xfb7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-s_frexp.o)
+ .debug_info    0x0024c4c1      0xee1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-sbrkr.o)
+ .debug_info    0x0024d3a2     0x1429 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
+ .debug_info    0x0024e7cb      0x139 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcmp.o)
+ .debug_info    0x0024e904      0xe8d c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strncpy.o)
+ .debug_info    0x0024f791     0x21d8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfiprintf.o)
+ .debug_info    0x00251969     0x1279 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wbuf.o)
+ .debug_info    0x00252be2     0x180a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wcrtomb.o)
+ .debug_info    0x002543ec     0x1754 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wctomb_r.o)
+ .debug_info    0x00255b40      0xf18 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o)
+ .debug_info    0x00256a58      0xeee c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
+ .debug_info    0x00257946     0x1265 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-callocr.o)
+ .debug_info    0x00258bab      0xec8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o)
+ .debug_info    0x00259a73     0x1586 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-ctype_.o)
+ .debug_info    0x0025aff9     0x12ae c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fclose.o)
+ .debug_info    0x0025c2a7     0x11bd c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o)
+ .debug_info    0x0025d464      0xecd c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o)
+ .debug_info    0x0025e331      0xef9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o)
+ .debug_info    0x0025f22a      0xf10 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o)
+ .debug_info    0x0026013a      0x296 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(read.o)
+ .debug_info    0x002603d0      0x298 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(write.o)
+ .debug_info    0x00260668      0x29e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_getc.o)
+ .debug_info    0x00260906      0x29e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_putc.o)
 
-.debug_abbrev   0x00000000    0x202fa
+.debug_abbrev   0x00000000    0x2030b
  .debug_abbrev  0x00000000       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard/crt0.o
  .debug_abbrev  0x00000014       0x7a build/Default/production/gcc/system_same54.o
  .debug_abbrev  0x0000008e      0x147 build/Default/production/hal/src/hal_atomic.o
@@ -2197,122 +2197,122 @@ LOAD data_init
  .debug_abbrev  0x0000ea3c      0x488 build/Default/production/RAMRecipes.o
  .debug_abbrev  0x0000eec4      0x516 build/Default/production/StateTeachMode.o
  .debug_abbrev  0x0000f3da      0x442 build/Default/production/StateScreenTest.o
- .debug_abbrev  0x0000f81c      0x4d8 build/Default/production/StateShowBrewCounters.o
- .debug_abbrev  0x0000fcf4      0x497 build/Default/production/StateEditLowTempNoBrew.o
- .debug_abbrev  0x0001018b      0x44c build/Default/production/StateResetSystemSettings.o
- .debug_abbrev  0x000105d7      0x540 build/Default/production/StateAutomaticTestMode.o
- .debug_abbrev  0x00010b17      0x47b build/Default/production/StateViewTemperature.o
- .debug_abbrev  0x00010f92      0x4a0 build/Default/production/StateViewWaterLevels.o
- .debug_abbrev  0x00011432      0x489 build/Default/production/StateStandbyMode.o
- .debug_abbrev  0x000118bb      0x46a build/Default/production/StateFCTMainMenu.o
- .debug_abbrev  0x00011d25      0x44b build/Default/production/StateFCTControlCoffeeOutput.o
- .debug_abbrev  0x00012170      0x51c build/Default/production/StateFCTControlTeaOutput.o
- .debug_abbrev  0x0001268c      0x44b build/Default/production/StateFCTControlTankOutput.o
- .debug_abbrev  0x00012ad7      0x44b build/Default/production/StateFCTControlLEDOutput.o
- .debug_abbrev  0x00012f22      0x447 build/Default/production/StateViewTankInputs.o
- .debug_abbrev  0x00013369      0x541 build/Default/production/StateFCTViewReedInputs.o
- .debug_abbrev  0x000138aa      0x541 build/Default/production/StateFCTViewDipswitch.o
- .debug_abbrev  0x00013deb      0x543 build/Default/production/StateFCTViewOnBrdUserInputs.o
- .debug_abbrev  0x0001432e      0x470 build/Default/production/StateFCTTouchTest.o
- .debug_abbrev  0x0001479e      0x450 build/Default/production/StateFCTTestSPIFlash.o
- .debug_abbrev  0x00014bee      0x4aa build/Default/production/StateEditBrewDripoutTime.o
- .debug_abbrev  0x00015098      0x44c build/Default/production/StateViewPreErrorTempLog.o
- .debug_abbrev  0x000154e4      0x447 build/Default/production/StateViewPostErrorTempLog.o
- .debug_abbrev  0x0001592b      0x29d build/Default/production/WtchDog.o
- .debug_abbrev  0x00015bc8       0xf4 build/Default/production/smath.o
- .debug_abbrev  0x00015cbc      0x50d build/Default/production/StateFCTAllOutputsOnTest.o
- .debug_abbrev  0x000161c9      0x24b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_log.o)
- .debug_abbrev  0x00016414      0x24b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_pow.o)
- .debug_abbrev  0x0001665f      0x1ef c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_log.o)
- .debug_abbrev  0x0001684e      0x2cb c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_pow.o)
- .debug_abbrev  0x00016b19      0x1fa c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_sqrt.o)
- .debug_abbrev  0x00016d13      0x1eb c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fabs.o)
- .debug_abbrev  0x00016efe      0x1c2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_finite.o)
- .debug_abbrev  0x000170c0      0x18e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
- .debug_abbrev  0x0001724e      0x1c1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
- .debug_abbrev  0x0001740f      0x1bf c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
- .debug_abbrev  0x000175ce      0x204 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_rint.o)
- .debug_abbrev  0x000177d2      0x22e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_scalbn.o)
- .debug_abbrev  0x00017a00      0x1fa c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
- .debug_abbrev  0x00017bfa       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
- .debug_abbrev  0x00017c24       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x00017c38       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
- .debug_abbrev  0x00017c4c       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
- .debug_abbrev  0x00017c60       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_unorddf2.o)
- .debug_abbrev  0x00017c74       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixdfsi.o)
- .debug_abbrev  0x00017c88       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
- .debug_abbrev  0x00017c9c       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
- .debug_abbrev  0x00017cb0       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubsf3.o)
- .debug_abbrev  0x00017cc4       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_abbrev  0x00017cd8      0x201 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
- .debug_abbrev  0x00017ed9      0x508 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
- .debug_abbrev  0x000183e1       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
- .debug_abbrev  0x000183f5      0x27f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
- .debug_abbrev  0x00018674       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x00018688      0x1c8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-abort.o)
- .debug_abbrev  0x00018850      0x205 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-assert.o)
- .debug_abbrev  0x00018a55      0x194 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
- .debug_abbrev  0x00018be9      0x1e9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-exit.o)
- .debug_abbrev  0x00018dd2      0x1ea c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fiprintf.o)
- .debug_abbrev  0x00018fbc      0x176 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
- .debug_abbrev  0x00019132       0xa3 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
- .debug_abbrev  0x000191d5      0x1a3 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcmp.o)
- .debug_abbrev  0x00019378       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
- .debug_abbrev  0x0001938c      0x1b7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
- .debug_abbrev  0x00019543      0x23e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
- .debug_abbrev  0x00019781      0x319 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signal.o)
- .debug_abbrev  0x00019a9a      0x253 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signalr.o)
- .debug_abbrev  0x00019ced      0x234 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-snprintf.o)
- .debug_abbrev  0x00019f21      0x19c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcpy.o)
- .debug_abbrev  0x0001a0bd       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
- .debug_abbrev  0x0001a0d1      0x319 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfprintf.o)
- .debug_abbrev  0x0001a3ea      0x3a2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
- .debug_abbrev  0x0001a78c      0x366 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
- .debug_abbrev  0x0001aaf2      0x23c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wsetup.o)
- .debug_abbrev  0x0001ad2e      0x242 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
- .debug_abbrev  0x0001af70      0x1e6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
- .debug_abbrev  0x0001b156      0x292 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
- .debug_abbrev  0x0001b3e8      0x2d2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
- .debug_abbrev  0x0001b6ba      0x3a1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
- .debug_abbrev  0x0001ba5b       0xa6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
- .debug_abbrev  0x0001bb01      0x309 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
- .debug_abbrev  0x0001be0a      0x24f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
- .debug_abbrev  0x0001c059      0x263 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fvwrite.o)
- .debug_abbrev  0x0001c2bc      0x1e3 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fwalk.o)
- .debug_abbrev  0x0001c49f      0x299 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
- .debug_abbrev  0x0001c738      0x21b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-localeconv.o)
- .debug_abbrev  0x0001c953      0x2b6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
- .debug_abbrev  0x0001cc09      0x2ad c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
- .debug_abbrev  0x0001ceb6      0x203 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mbtowc_r.o)
- .debug_abbrev  0x0001d0b9       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memchr.o)
- .debug_abbrev  0x0001d0cd      0x1bc c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memmove.o)
- .debug_abbrev  0x0001d289      0x1b9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
- .debug_abbrev  0x0001d442      0x3e8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
- .debug_abbrev  0x0001d82a      0x262 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reallocr.o)
- .debug_abbrev  0x0001da8c      0x23f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reent.o)
- .debug_abbrev  0x0001dccb      0x1f6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-s_frexp.o)
- .debug_abbrev  0x0001dec1      0x1ed c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-sbrkr.o)
- .debug_abbrev  0x0001e0ae      0x284 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
- .debug_abbrev  0x0001e332       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcmp.o)
- .debug_abbrev  0x0001e346      0x1ad c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strncpy.o)
- .debug_abbrev  0x0001e4f3      0x2c7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfiprintf.o)
- .debug_abbrev  0x0001e7ba      0x266 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wbuf.o)
- .debug_abbrev  0x0001ea20      0x220 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wcrtomb.o)
- .debug_abbrev  0x0001ec40      0x21f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wctomb_r.o)
- .debug_abbrev  0x0001ee5f      0x1fc c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o)
- .debug_abbrev  0x0001f05b      0x1f2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
- .debug_abbrev  0x0001f24d      0x203 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-callocr.o)
- .debug_abbrev  0x0001f450      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o)
- .debug_abbrev  0x0001f647      0x176 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-ctype_.o)
- .debug_abbrev  0x0001f7bd      0x2b9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fclose.o)
- .debug_abbrev  0x0001fa76      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o)
- .debug_abbrev  0x0001fc6d      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o)
- .debug_abbrev  0x0001fe64      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o)
- .debug_abbrev  0x0002005b      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o)
- .debug_abbrev  0x00020252       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(read.o)
- .debug_abbrev  0x0002027c       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(write.o)
- .debug_abbrev  0x000202a6       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_getc.o)
- .debug_abbrev  0x000202d0       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_putc.o)
+ .debug_abbrev  0x0000f81c      0x4e9 build/Default/production/StateShowBrewCounters.o
+ .debug_abbrev  0x0000fd05      0x497 build/Default/production/StateEditLowTempNoBrew.o
+ .debug_abbrev  0x0001019c      0x44c build/Default/production/StateResetSystemSettings.o
+ .debug_abbrev  0x000105e8      0x540 build/Default/production/StateAutomaticTestMode.o
+ .debug_abbrev  0x00010b28      0x47b build/Default/production/StateViewTemperature.o
+ .debug_abbrev  0x00010fa3      0x4a0 build/Default/production/StateViewWaterLevels.o
+ .debug_abbrev  0x00011443      0x489 build/Default/production/StateStandbyMode.o
+ .debug_abbrev  0x000118cc      0x46a build/Default/production/StateFCTMainMenu.o
+ .debug_abbrev  0x00011d36      0x44b build/Default/production/StateFCTControlCoffeeOutput.o
+ .debug_abbrev  0x00012181      0x51c build/Default/production/StateFCTControlTeaOutput.o
+ .debug_abbrev  0x0001269d      0x44b build/Default/production/StateFCTControlTankOutput.o
+ .debug_abbrev  0x00012ae8      0x44b build/Default/production/StateFCTControlLEDOutput.o
+ .debug_abbrev  0x00012f33      0x447 build/Default/production/StateViewTankInputs.o
+ .debug_abbrev  0x0001337a      0x541 build/Default/production/StateFCTViewReedInputs.o
+ .debug_abbrev  0x000138bb      0x541 build/Default/production/StateFCTViewDipswitch.o
+ .debug_abbrev  0x00013dfc      0x543 build/Default/production/StateFCTViewOnBrdUserInputs.o
+ .debug_abbrev  0x0001433f      0x470 build/Default/production/StateFCTTouchTest.o
+ .debug_abbrev  0x000147af      0x450 build/Default/production/StateFCTTestSPIFlash.o
+ .debug_abbrev  0x00014bff      0x4aa build/Default/production/StateEditBrewDripoutTime.o
+ .debug_abbrev  0x000150a9      0x44c build/Default/production/StateViewPreErrorTempLog.o
+ .debug_abbrev  0x000154f5      0x447 build/Default/production/StateViewPostErrorTempLog.o
+ .debug_abbrev  0x0001593c      0x29d build/Default/production/WtchDog.o
+ .debug_abbrev  0x00015bd9       0xf4 build/Default/production/smath.o
+ .debug_abbrev  0x00015ccd      0x50d build/Default/production/StateFCTAllOutputsOnTest.o
+ .debug_abbrev  0x000161da      0x24b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_log.o)
+ .debug_abbrev  0x00016425      0x24b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_pow.o)
+ .debug_abbrev  0x00016670      0x1ef c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_log.o)
+ .debug_abbrev  0x0001685f      0x2cb c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_pow.o)
+ .debug_abbrev  0x00016b2a      0x1fa c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_sqrt.o)
+ .debug_abbrev  0x00016d24      0x1eb c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fabs.o)
+ .debug_abbrev  0x00016f0f      0x1c2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_finite.o)
+ .debug_abbrev  0x000170d1      0x18e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_lib_ver.o)
+ .debug_abbrev  0x0001725f      0x1c1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+ .debug_abbrev  0x00017420      0x1bf c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+ .debug_abbrev  0x000175df      0x204 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_rint.o)
+ .debug_abbrev  0x000177e3      0x22e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_scalbn.o)
+ .debug_abbrev  0x00017a11      0x1fa c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
+ .debug_abbrev  0x00017c0b       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
+ .debug_abbrev  0x00017c35       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x00017c49       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x00017c5d       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x00017c71       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_unorddf2.o)
+ .debug_abbrev  0x00017c85       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixdfsi.o)
+ .debug_abbrev  0x00017c99       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_fixunsdfsi.o)
+ .debug_abbrev  0x00017cad       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_truncdfsf2.o)
+ .debug_abbrev  0x00017cc1       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_arm_addsubsf3.o)
+ .debug_abbrev  0x00017cd5       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00017ce9      0x201 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x00017eea      0x508 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(unwind-arm.o)
+ .debug_abbrev  0x000183f2       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(libunwind.o)
+ .debug_abbrev  0x00018406      0x27f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(pr-support.o)
+ .debug_abbrev  0x00018685       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard\libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x00018699      0x1c8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-abort.o)
+ .debug_abbrev  0x00018861      0x205 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-assert.o)
+ .debug_abbrev  0x00018a66      0x194 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+ .debug_abbrev  0x00018bfa      0x1e9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-exit.o)
+ .debug_abbrev  0x00018de3      0x1ea c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fiprintf.o)
+ .debug_abbrev  0x00018fcd      0x176 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+ .debug_abbrev  0x00019143       0xa3 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-init.o)
+ .debug_abbrev  0x000191e6      0x1a3 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcmp.o)
+ .debug_abbrev  0x00019389       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memcpy.o)
+ .debug_abbrev  0x0001939d      0x1b7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memset.o)
+ .debug_abbrev  0x00019554      0x23e c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-printf.o)
+ .debug_abbrev  0x00019792      0x319 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signal.o)
+ .debug_abbrev  0x00019aab      0x253 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-signalr.o)
+ .debug_abbrev  0x00019cfe      0x234 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-snprintf.o)
+ .debug_abbrev  0x00019f32      0x19c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcpy.o)
+ .debug_abbrev  0x0001a0ce       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strlen.o)
+ .debug_abbrev  0x0001a0e2      0x319 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfprintf.o)
+ .debug_abbrev  0x0001a3fb      0x3a2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfiprintf.o)
+ .debug_abbrev  0x0001a79d      0x366 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-vfprintf.o)
+ .debug_abbrev  0x0001ab03      0x23c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wsetup.o)
+ .debug_abbrev  0x0001ad3f      0x242 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__call_atexit.o)
+ .debug_abbrev  0x0001af81      0x1e6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-atexit.o)
+ .debug_abbrev  0x0001b167      0x292 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-dtoa.o)
+ .debug_abbrev  0x0001b3f9      0x2d2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fflush.o)
+ .debug_abbrev  0x0001b6cb      0x3a1 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-findfp.o)
+ .debug_abbrev  0x0001ba6c       0xa6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fini.o)
+ .debug_abbrev  0x0001bb12      0x309 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fputwc.o)
+ .debug_abbrev  0x0001be1b      0x24f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-freer.o)
+ .debug_abbrev  0x0001c06a      0x263 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fvwrite.o)
+ .debug_abbrev  0x0001c2cd      0x1e3 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fwalk.o)
+ .debug_abbrev  0x0001c4b0      0x299 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+ .debug_abbrev  0x0001c749      0x21b c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-localeconv.o)
+ .debug_abbrev  0x0001c964      0x2b6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-makebuf.o)
+ .debug_abbrev  0x0001cc1a      0x2ad c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+ .debug_abbrev  0x0001cec7      0x203 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mbtowc_r.o)
+ .debug_abbrev  0x0001d0ca       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memchr.o)
+ .debug_abbrev  0x0001d0de      0x1bc c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-memmove.o)
+ .debug_abbrev  0x0001d29a      0x1b9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mlock.o)
+ .debug_abbrev  0x0001d453      0x3e8 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mprec.o)
+ .debug_abbrev  0x0001d83b      0x262 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reallocr.o)
+ .debug_abbrev  0x0001da9d      0x23f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-reent.o)
+ .debug_abbrev  0x0001dcdc      0x1f6 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-s_frexp.o)
+ .debug_abbrev  0x0001ded2      0x1ed c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-sbrkr.o)
+ .debug_abbrev  0x0001e0bf      0x284 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-stdio.o)
+ .debug_abbrev  0x0001e343       0x14 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strcmp.o)
+ .debug_abbrev  0x0001e357      0x1ad c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-strncpy.o)
+ .debug_abbrev  0x0001e504      0x2c7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-svfiprintf.o)
+ .debug_abbrev  0x0001e7cb      0x266 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wbuf.o)
+ .debug_abbrev  0x0001ea31      0x220 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wcrtomb.o)
+ .debug_abbrev  0x0001ec51      0x21f c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-wctomb_r.o)
+ .debug_abbrev  0x0001ee70      0x1fc c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-writer.o)
+ .debug_abbrev  0x0001f06c      0x1f2 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-__atexit.o)
+ .debug_abbrev  0x0001f25e      0x203 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-callocr.o)
+ .debug_abbrev  0x0001f461      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-closer.o)
+ .debug_abbrev  0x0001f658      0x176 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-ctype_.o)
+ .debug_abbrev  0x0001f7ce      0x2b9 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fclose.o)
+ .debug_abbrev  0x0001fa87      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-fstatr.o)
+ .debug_abbrev  0x0001fc7e      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-isattyr.o)
+ .debug_abbrev  0x0001fe75      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-lseekr.o)
+ .debug_abbrev  0x0002006c      0x1f7 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-readr.o)
+ .debug_abbrev  0x00020263       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(read.o)
+ .debug_abbrev  0x0002028d       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(write.o)
+ .debug_abbrev  0x000202b7       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_getc.o)
+ .debug_abbrev  0x000202e1       0x2a c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_putc.o)
 
 .debug_aranges  0x00000000     0x1cf0
  .debug_aranges
@@ -3412,8 +3412,8 @@ LOAD data_init
  .debug_ranges  0x00001588       0x10 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_getc.o)
  .debug_ranges  0x00001598       0x10 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(_mon_putc.o)
 
-.stack          0x20023b78      0x100
- .stack         0x20023b78      0x100 stack
+.stack          0x20023b70      0x100
+ .stack         0x20023b70      0x100 stack
 
 .bss%1          0x20000408     0x9c54
  .bss           0x20000408     0x9c54 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/MemMang/heap_2.o
@@ -3525,39 +3525,38 @@ LOAD data_init
                 0x2000d060                valveOpenTimeMs
 
 .bss%7          0x2000d260     0x2081
- .bss           0x2000d260      0x878 build/Default/production/StateEditCoffeeRecipe.o
-                0x2000d920                currentCoffeeBeverageEditState
-                0x2000d924                editedRecipe
-                0x2000d94a                pulseNumberEdited
-                0x2000d94b                singleHeadUnit
-                0x2000d94c                recipeSelectorStateInitialized
-                0x2000d950                buttonHoldCount
-                0x2000d954                lastTouchButton
-                0x2000d958                eventCounter
-                0x2000d95c                headSelectIndex
-                0x2000d95d                recipeSelectIndex
-                0x2000d95e                recipeSelectorInitialized
-                0x2000d960                recipeSelectorBottomLine
-                0x2000d974                RecipeSelectorMsg
-                0x2000d994                headSelectorInitialized
-                0x2000d998                headSelectorBottomLine
-                0x2000d9ac                HeadSelectorMsg
-                0x2000d9cc                editEntireRecipeHandlerInitialized
-                0x2000d9d0                editEntireRecipeBottomLine
-                0x2000d9e4                editEntireRecipeAnswer
-                0x2000d9e8                EditEntireRecipeMsg
-                0x2000da08                pulseSelectInitialized
-                0x2000da0c                pulseSelectBottomLine
-                0x2000da20                PulseSelectMsg
-                0x2000da40                editSelectedPulseInitialized
-                0x2000da44                editPulseOnTimeSTop
-                0x2000da58                editPulseOnTimeSBottom
-                0x2000da6c                EditPulseOnTimeSMsg
-                0x2000da8c                editSelectedPulseOffInitialized
-                0x2000da90                editPulseOffTimeSTop
-                0x2000daa4                editPulseOffTimeSBottom
-                0x2000dab8                EditPulseOffTimeSMsg
- .bss           0x2000dad8      0x878 build/Default/production/StateShowBrewCounters.o
+ .bss           0x2000d260      0x87c build/Default/production/StateShowBrewCounters.o
+ .bss           0x2000dadc      0x874 build/Default/production/StateEditCoffeeRecipe.o
+                0x2000e19c                currentCoffeeBeverageEditState
+                0x2000e1a0                editedRecipe
+                0x2000e1c6                pulseNumberEdited
+                0x2000e1c7                recipeSelectorStateInitialized
+                0x2000e1c8                buttonHoldCount
+                0x2000e1cc                lastTouchButton
+                0x2000e1d0                eventCounter
+                0x2000e1d4                headSelectIndex
+                0x2000e1d5                recipeSelectIndex
+                0x2000e1d6                recipeSelectorInitialized
+                0x2000e1d8                recipeSelectorBottomLine
+                0x2000e1ec                RecipeSelectorMsg
+                0x2000e20c                headSelectorInitialized
+                0x2000e210                headSelectorBottomLine
+                0x2000e224                HeadSelectorMsg
+                0x2000e244                editEntireRecipeHandlerInitialized
+                0x2000e248                editEntireRecipeBottomLine
+                0x2000e25c                editEntireRecipeAnswer
+                0x2000e260                EditEntireRecipeMsg
+                0x2000e280                pulseSelectInitialized
+                0x2000e284                pulseSelectBottomLine
+                0x2000e298                PulseSelectMsg
+                0x2000e2b8                editSelectedPulseInitialized
+                0x2000e2bc                editPulseOnTimeSTop
+                0x2000e2d0                editPulseOnTimeSBottom
+                0x2000e2e4                EditPulseOnTimeSMsg
+                0x2000e304                editSelectedPulseOffInitialized
+                0x2000e308                editPulseOffTimeSTop
+                0x2000e31c                editPulseOffTimeSBottom
+                0x2000e330                EditPulseOffTimeSMsg
  .bss           0x2000e350      0x7e8 build/Default/production/StateFCTControlCoffeeOutput.o
  .bss           0x2000eb38      0x7a9 build/Default/production/StateFCTControlTeaOutput.o
 
@@ -3719,188 +3718,189 @@ LOAD data_init
  .data          0x2001f21c      0x239 build/Default/production/StateEditCoffeeRecipe.o
                 0x2001f454                recipeRightSelectIndex
 
-.data%55        0x2001f458      0x235
- .data          0x2001f458      0x235 build/Default/production/StateShowBrewCounters.o
+.data%55        0x2001f458      0x69a
+ .data          0x2001f458      0x234 build/Default/production/StateEditTankTemperature.o
+                0x2001f688                uiEditTankTemperatureF
+ .data          0x2001f68c      0x234 build/Default/production/StateEditBrewDripoutTime.o
+                0x2001f8bc                uiEditBrewLockoutTimeS
+ .data          0x2001f8c0      0x232 build/Default/production/StateShowBrewCounters.o
+                0x2001faf0                singleHeadUnit
 
-.data%56        0x2001f690     0x3d48
- .data          0x2001f690      0x234 build/Default/production/StateEditTankTemperature.o
-                0x2001f8c0                uiEditTankTemperatureF
- .data          0x2001f8c4      0x234 build/Default/production/StateEditBrewDripoutTime.o
-                0x2001faf4                uiEditBrewLockoutTimeS
- .data          0x2001faf8      0x230 build/Default/production/cppinit.o
- .data          0x2001fd28      0x230 build/Default/production/SystemManager.o
- .data          0x2001ff58      0x230 build/Default/production/StateNormalMode.o
- .data          0x20020188      0x230 build/Default/production/StateMenuBrowse.o
- .data          0x200203b8      0x230 build/Default/production/StateEditTime.o
- .data          0x200205e8      0x230 build/Default/production/StateSystemStartup.o
- .data          0x20020818      0x230 build/Default/production/StateEnergySavings.o
- .data          0x20020a48      0x230 build/Default/production/StateEditTimeFormat.o
- .data          0x20020c78      0x230 build/Default/production/RAMRecipes.o
- .data          0x20020ea8      0x230 build/Default/production/StateTeachMode.o
- .data          0x200210d8      0x230 build/Default/production/StateScreenTest.o
- .data          0x20021308      0x230 build/Default/production/StateEditLowTempNoBrew.o
- .data          0x20021538      0x230 build/Default/production/StateResetSystemSettings.o
- .data          0x20021768      0x230 build/Default/production/StateAutomaticTestMode.o
- .data          0x20021998      0x230 build/Default/production/StateViewTemperature.o
- .data          0x20021bc8      0x230 build/Default/production/StateStandbyMode.o
- .data          0x20021df8      0x230 build/Default/production/StateFCTMainMenu.o
- .data          0x20022028      0x230 build/Default/production/StateFCTControlCoffeeOutput.o
- .data          0x20022258      0x230 build/Default/production/StateFCTControlTeaOutput.o
- .data          0x20022488      0x230 build/Default/production/StateFCTControlTankOutput.o
- .data          0x200226b8      0x230 build/Default/production/StateFCTControlLEDOutput.o
- .data          0x200228e8      0x230 build/Default/production/StateViewTankInputs.o
- .data          0x20022b18      0x230 build/Default/production/StateFCTTestSPIFlash.o
- .data          0x20022d48      0x230 build/Default/production/StateViewPreErrorTempLog.o
- .data          0x20022f78      0x230 build/Default/production/StateViewPostErrorTempLog.o
- .data          0x200231a8      0x230 build/Default/production/StateFCTAllOutputsOnTest.o
+.data%58        0x2001faf4     0x38e0
+ .data          0x2001faf4      0x230 build/Default/production/cppinit.o
+ .data          0x2001fd24      0x230 build/Default/production/SystemManager.o
+ .data          0x2001ff54      0x230 build/Default/production/StateNormalMode.o
+ .data          0x20020184      0x230 build/Default/production/StateMenuBrowse.o
+ .data          0x200203b4      0x230 build/Default/production/StateEditTime.o
+ .data          0x200205e4      0x230 build/Default/production/StateSystemStartup.o
+ .data          0x20020814      0x230 build/Default/production/StateEnergySavings.o
+ .data          0x20020a44      0x230 build/Default/production/StateEditTimeFormat.o
+ .data          0x20020c74      0x230 build/Default/production/RAMRecipes.o
+ .data          0x20020ea4      0x230 build/Default/production/StateTeachMode.o
+ .data          0x200210d4      0x230 build/Default/production/StateScreenTest.o
+ .data          0x20021304      0x230 build/Default/production/StateEditLowTempNoBrew.o
+ .data          0x20021534      0x230 build/Default/production/StateResetSystemSettings.o
+ .data          0x20021764      0x230 build/Default/production/StateAutomaticTestMode.o
+ .data          0x20021994      0x230 build/Default/production/StateViewTemperature.o
+ .data          0x20021bc4      0x230 build/Default/production/StateStandbyMode.o
+ .data          0x20021df4      0x230 build/Default/production/StateFCTMainMenu.o
+ .data          0x20022024      0x230 build/Default/production/StateFCTControlCoffeeOutput.o
+ .data          0x20022254      0x230 build/Default/production/StateFCTControlTeaOutput.o
+ .data          0x20022484      0x230 build/Default/production/StateFCTControlTankOutput.o
+ .data          0x200226b4      0x230 build/Default/production/StateFCTControlLEDOutput.o
+ .data          0x200228e4      0x230 build/Default/production/StateViewTankInputs.o
+ .data          0x20022b14      0x230 build/Default/production/StateFCTTestSPIFlash.o
+ .data          0x20022d44      0x230 build/Default/production/StateViewPreErrorTempLog.o
+ .data          0x20022f74      0x230 build/Default/production/StateViewPostErrorTempLog.o
+ .data          0x200231a4      0x230 build/Default/production/StateFCTAllOutputsOnTest.o
 
 .data.__global_locale%84
-                0x200233d8      0x16c
+                0x200233d4      0x16c
  .data.__global_locale
-                0x200233d8      0x16c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
-                0x200233d8                __global_locale
+                0x200233d4      0x16c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+                0x200233d4                __global_locale
 
-.bss%85         0x20023544      0x349
- .bss           0x20023544      0x144 build/Default/production/thirdparty/SEGGER/Sample/FreeRTOSV10/SEGGER_SYSVIEW_FreeRTOS.o
- .bss           0x20023688      0x104 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/tasks.o
-                0x20023688                pxCurrentTCB
- .bss           0x2002378c      0x101 build/Default/production/NvParmManager.o
-                0x2002378c                NvParmManager::parms
-                0x20023804                NvParmManager::resetParm
-                0x20023814                NvParmManager::parmDefaults
-                0x2002388c                NvParmManager::init
+.bss%85         0x20023540      0x349
+ .bss           0x20023540      0x144 build/Default/production/thirdparty/SEGGER/Sample/FreeRTOSV10/SEGGER_SYSVIEW_FreeRTOS.o
+ .bss           0x20023684      0x104 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/tasks.o
+                0x20023684                pxCurrentTCB
+ .bss           0x20023788      0x101 build/Default/production/NvParmManager.o
+                0x20023788                NvParmManager::parms
+                0x20023800                NvParmManager::resetParm
+                0x20023810                NvParmManager::parmDefaults
+                0x20023888                NvParmManager::init
 
-.bss%88         0x20023890      0x151
- .bss           0x20023890       0xa8 build/Default/production/WarmerManager.o
-                0x20023890                Warmer1
-                0x200238ac                Warmer2
-                0x200238c8                Warmer3
-                0x200238e4                Warmer4
-                0x20023900                Warmer5
-                0x2002391c                Warmer6
- .bss           0x20023938       0x3c build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/timers.o
- .bss           0x20023974       0x38 build/Default/production/Calendar.o
-                0x20023974                CALENDAR_0
- .bss           0x200239ac       0x35 build/Default/production/driver_init.o
+.bss%88         0x2002388c      0x151
+ .bss           0x2002388c       0xa8 build/Default/production/WarmerManager.o
+                0x2002388c                Warmer1
+                0x200238a8                Warmer2
+                0x200238c4                Warmer3
+                0x200238e0                Warmer4
+                0x200238fc                Warmer5
+                0x20023918                Warmer6
+ .bss           0x20023934       0x3c build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/timers.o
+ .bss           0x20023970       0x38 build/Default/production/Calendar.o
+                0x20023970                CALENDAR_0
+ .bss           0x200239a8       0x35 build/Default/production/driver_init.o
 
-.bss%92         0x200239e4       0x33
- .bss           0x200239e4       0x33 build/Default/production/LedManager.o
-                0x200239e4                LED01
-                0x200239e8                LED02
-                0x200239ec                LED03
-                0x200239f0                CSLED04
-                0x200239f4                CSLED07
-                0x200239f8                CSLED12
-                0x200239fc                CSLED05
-                0x20023a00                CSLED10
-                0x20023a04                CSLED08
-                0x20023a08                CSLED09
-                0x20023a0c                DEBUGLED
-                0x20023a10                CSRBG06
-                0x20023a14                CSRGB11
+.bss%92         0x200239e0       0x33
+ .bss           0x200239e0       0x33 build/Default/production/LedManager.o
+                0x200239e0                LED01
+                0x200239e4                LED02
+                0x200239e8                LED03
+                0x200239ec                CSLED04
+                0x200239f0                CSLED07
+                0x200239f4                CSLED12
+                0x200239f8                CSLED05
+                0x200239fc                CSLED10
+                0x20023a00                CSLED08
+                0x20023a04                CSLED09
+                0x20023a08                DEBUGLED
+                0x20023a0c                CSRBG06
+                0x20023a10                CSRGB11
 
-.data%93        0x20023a18       0x30
- .data          0x20023a18       0x30 build/Default/production/hpl/sercom/hpl_sercom.o
+.data%93        0x20023a14       0x30
+ .data          0x20023a14       0x30 build/Default/production/hpl/sercom/hpl_sercom.o
 
 .bss.__malloc_current_mallinfo%94
-                0x20023a48       0x28
+                0x20023a44       0x28
  .bss.__malloc_current_mallinfo
-                0x20023a48       0x28 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x20023a48                __malloc_current_mallinfo
+                0x20023a44       0x28 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x20023a44                __malloc_current_mallinfo
 
-.bss%95         0x20023a70       0x35
- .bss           0x20023a70       0x1c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
- .bss           0x20023a8c       0x19 build/Default/production/debugFunctions.o
+.bss%95         0x20023a6c       0x35
+ .bss           0x20023a6c       0x1c c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
+ .bss           0x20023a88       0x19 build/Default/production/debugFunctions.o
 
-.bss%97         0x20023aa8       0x18
- .bss           0x20023aa8       0x18 build/Default/production/hpl/sercom/hpl_sercom.o
+.bss%97         0x20023aa4       0x18
+ .bss           0x20023aa4       0x18 build/Default/production/hpl/sercom/hpl_sercom.o
 
-.data%98        0x20023ac0       0x10
- .data          0x20023ac0       0x10 build/Default/production/thirdparty/SEGGER/Segger/SEGGER_RTT.o
+.data%98        0x20023abc       0x10
+ .data          0x20023abc       0x10 build/Default/production/thirdparty/SEGGER/Segger/SEGGER_RTT.o
 
-.bss%99         0x20023ad0       0x31
- .bss           0x20023ad0        0xc build/Default/production/CapsenseController.o
-                0x20023ad0                si
-                0x20023ad4                CapsenseController::CapsenseControllers
-                0x20023ad8                CapsenseController::capsenseWriteIndex
- .bss           0x20023adc        0x8 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/GCC/ARM_CM4F/port.o
- .bss           0x20023ae4        0x8 build/Default/production/rtos_start.o
- .bss           0x20023aec        0x8 build/Default/production/TankManager.o
-                0x20023aec                TankManager::TankManagers
-                0x20023af0                TankManager::TankManagersWriteIndex
- .bss           0x20023af4        0x8 build/Default/production/SPIFlash.o
-                0x20023af4                SPIBusForFlash
- .bss           0x20023afc        0x5 build/Default/production/hal/utils/src/utils_event.o
+.bss%99         0x20023acc       0x31
+ .bss           0x20023acc        0xc build/Default/production/CapsenseController.o
+                0x20023acc                si
+                0x20023ad0                CapsenseController::CapsenseControllers
+                0x20023ad4                CapsenseController::capsenseWriteIndex
+ .bss           0x20023ad8        0x8 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/GCC/ARM_CM4F/port.o
+ .bss           0x20023ae0        0x8 build/Default/production/rtos_start.o
+ .bss           0x20023ae8        0x8 build/Default/production/TankManager.o
+                0x20023ae8                TankManager::TankManagers
+                0x20023aec                TankManager::TankManagersWriteIndex
+ .bss           0x20023af0        0x8 build/Default/production/SPIFlash.o
+                0x20023af0                SPIBusForFlash
+ .bss           0x20023af8        0x5 build/Default/production/hal/utils/src/utils_event.o
 
 .data%105       0x2000a05c        0x4
  .data          0x2000a05c        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtbegin.o
                 0x2000a05c                __dso_handle
 
-.data%106       0x20023b04        0x4
- .data          0x20023b04        0x4 build/Default/production/gcc/system_same54.o
-                0x20023b04                SystemCoreClock
+.data%106       0x20023b00        0x4
+ .data          0x20023b00        0x4 build/Default/production/gcc/system_same54.o
+                0x20023b00                SystemCoreClock
 
-.bss%107        0x20023b08        0xc
- .bss           0x20023b08        0x4 build/Default/production/hal/src/hal_delay.o
- .bss           0x20023b0c        0x4 build/Default/production/hal/utils/src/utils_syscalls.o
- .bss           0x20023b10        0x4 build/Default/production/hpl/adc/hpl_adc.o
+.bss%107        0x20023b04        0xc
+ .bss           0x20023b04        0x4 build/Default/production/hal/src/hal_delay.o
+ .bss           0x20023b08        0x4 build/Default/production/hal/utils/src/utils_syscalls.o
+ .bss           0x20023b0c        0x4 build/Default/production/hpl/adc/hpl_adc.o
 
-.data%110       0x20023b14        0x8
- .data          0x20023b14        0x4 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/GCC/ARM_CM4F/port.o
- .data          0x20023b18        0x4 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/MemMang/heap_2.o
+.data%110       0x20023b10        0x8
+ .data          0x20023b10        0x4 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/GCC/ARM_CM4F/port.o
+ .data          0x20023b14        0x4 build/Default/production/thirdparty/RTOS/freertos/FreeRTOSV10.0.0/Source/portable/MemMang/heap_2.o
 
-.bss%112        0x20023b1c        0x8
- .bss           0x20023b1c        0x4 build/Default/production/DispenseManager.o
-                0x20023b1c                DispenseManager::brewLockoutTimeMs
- .bss           0x20023b20        0x4 build/Default/production/hpl_rtc.o
+.bss%112        0x20023b18        0x8
+ .bss           0x20023b18        0x4 build/Default/production/DispenseManager.o
+                0x20023b18                DispenseManager::brewLockoutTimeMs
+ .bss           0x20023b1c        0x4 build/Default/production/hpl_rtc.o
 
 .data._impure_ptr%114
-                0x20023b24        0x4
+                0x20023b20        0x4
  .data._impure_ptr
-                0x20023b24        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
-                0x20023b24                _impure_ptr
+                0x20023b20        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-impure.o)
+                0x20023b20                _impure_ptr
 
 .bss._PathLocale%115
-                0x20023b28        0x4
+                0x20023b24        0x4
  .bss._PathLocale
-                0x20023b28        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
-                0x20023b28                _PathLocale
+                0x20023b24        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-locale.o)
+                0x20023b24                _PathLocale
 
 .bss.__malloc_max_sbrked_mem%116
-                0x20023b2c        0x4
+                0x20023b28        0x4
  .bss.__malloc_max_sbrked_mem
-                0x20023b2c        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x20023b2c                __malloc_max_sbrked_mem
+                0x20023b28        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x20023b28                __malloc_max_sbrked_mem
 
 .bss.__malloc_max_total_mem%117
-                0x20023b30        0x4
+                0x20023b2c        0x4
  .bss.__malloc_max_total_mem
-                0x20023b30        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x20023b30                __malloc_max_total_mem
+                0x20023b2c        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x20023b2c                __malloc_max_total_mem
 
 .bss.__malloc_top_pad%118
-                0x20023b34        0x4
+                0x20023b30        0x4
  .bss.__malloc_top_pad
-                0x20023b34        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x20023b34                __malloc_top_pad
+                0x20023b30        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x20023b30                __malloc_top_pad
 
 .data.__malloc_sbrk_base%119
-                0x20023b38        0x4
+                0x20023b34        0x4
  .data.__malloc_sbrk_base
-                0x20023b38        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x20023b38                __malloc_sbrk_base
+                0x20023b34        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x20023b34                __malloc_sbrk_base
 
 .data.__malloc_trim_threshold%120
-                0x20023b3c        0x4
+                0x20023b38        0x4
  .data.__malloc_trim_threshold
-                0x20023b3c        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
-                0x20023b3c                __malloc_trim_threshold
+                0x20023b38        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libc.a(lib_a-mallocr.o)
+                0x20023b38                __malloc_trim_threshold
 
-.eh_frame%121   0x20023b40        0x4
- .eh_frame      0x20023b40        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+.eh_frame%121   0x20023b3c        0x4
+ .eh_frame      0x20023b3c        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
 
-.jcr%122        0x20023b44        0x4
- .jcr           0x20023b44        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
+.jcr%122        0x20023b40        0x4
+ .jcr           0x20023b40        0x4 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtend.o
 
 .data%123       0x2000b6f1        0x3
  .data          0x2000b6f1        0x3 build/Default/production/debugFunctions.o
@@ -3912,7 +3912,7 @@ LOAD data_init
                 0x200166af                __fdlib_version
 
 .bss%125        0x2001d3af        0x1
- .bss           0x2001d3af        0x1 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+ .bss           0x2001d3af        0x1 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
 
 .bss%z1         0x00000000        0x0
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/v7e-m/fpv4-sp/hard/crtn.o
@@ -4401,7 +4401,7 @@ LOAD data_init
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
 
 .data%z163      0x00000000        0x0
- .data          0x00000000        0x0 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+ .data          0x00000000        0x0 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
 
 .bss%z164       0x00000000        0x0
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)
@@ -6465,7 +6465,7 @@ LOAD data_init
 .text.Reset_Handler%319
                 0x0006bba0       0x90
  .text.Reset_Handler
-                0x0006bba0       0x90 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+                0x0006bba0       0x90 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
                 0x0006bba0                Reset_Handler
 
 .text._snprintf_r%320
@@ -7335,7 +7335,7 @@ LOAD data_init
 .text.Dummy_Handler%498
                 0x0006880e        0x2
  .text.Dummy_Handler
-                0x0006880e        0x2 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+                0x0006880e        0x2 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
                 0x0006880e                EIC_EXTINT_9_Handler
                 0x0006880e                TCC0_MC5_Handler
                 0x0006880e                USB_SOF_HSOF_Handler
@@ -7660,7 +7660,7 @@ LOAD data_init
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libpic32c.a(data_init.o)
 
 .text%z389      0x00000000        0x0
- .text          0x00000000        0x0 C:\Users\JOHNSF~1\AppData\Local\Temp\ccciNj44.o
+ .text          0x00000000        0x0 C:\Users\JOHNSF~1\AppData\Local\Temp\ccFUSpfJ.o
 
 .text%z390      0x00000000        0x0
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.15/bin/bin/../../lib/gcc/pic32c/6.2.1/../../../../pic32c/lib/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_copysign.o)

@@ -11,8 +11,8 @@
 const CoffeeSizeAttributes_t defaultCoffeeDecanterContainer[NUMBER_OF_SIZES] =
 {  
   {
-    {120,0,0,0,0,0,0,0}, //Pulse On
-    {0,0,0,0,0,0,0,0}, //Pulse Off
+    {115,0,0,0,0,0,0,0}, //Pulse On
+    {90,0,0,0,0,0,0,0}, //Pulse Off
   },
 };
 
@@ -20,8 +20,8 @@ const CoffeeSizeAttributes_t defaultCoffeeDecanterContainer[NUMBER_OF_SIZES] =
 const CoffeeSizeAttributes_t defaultCoffeeAirPotContainer[NUMBER_OF_SIZES] =
 {
   {
-    {130,0,0,0,0,0,0,0}, //Pulse On
-    {0,0,0,0,0,0,0,0}, //Pulse Off
+    {30,15,15,15,15,15,15,15}, //Pulse On
+    {10,10,10,10,10,10,10,100}, //Pulse Off
   },
 };
 
@@ -29,8 +29,8 @@ const CoffeeSizeAttributes_t defaultCoffeeAirPotContainer[NUMBER_OF_SIZES] =
 const CoffeeSizeAttributes_t defaultCoffeeGravityPotContainer[NUMBER_OF_SIZES] =
 {
   {
-    {150,0,0,0,0,0,0,0}, //Pulse On
-    {0,0,0,0,0,0,0,0}, //Pulse Off
+    {30,21,21,21,21,21,21,21}, //Pulse On
+    {10,10,10,10,10,10,10,120}, //Pulse Off
   },
 };
 
